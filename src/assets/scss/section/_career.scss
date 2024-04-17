@@ -1,0 +1,102 @@
+#career {
+	.career-inner {
+		display: flex;
+		justify-content: space-between;
+		@include vw(padding, 16px);
+		@media (max-width: 800px) {
+			flex-direction: column;
+		}
+	}
+	.career-title {
+		position: sticky;
+		@include vw(top, 100px);
+		left: 0;
+		width: 48%;
+		@include vw(height, 90px);
+		line-height: 1;
+		font-family: var(--mainKor-font);
+		@include vw(font-size, 100px);
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #000;
+		@include vw(border-bottom-width, 4px);
+		border-bottom-style: solid;
+		border-bottom-color: #000;
+		@media (max-width: 800px) {
+			width: 100%;
+			height: auto;
+			@include vw(margin-bottom, 40px);
+			background-color: var(--mainBg-color);
+		}
+		em {
+			line-height: 2;
+			@include vw(font-size, 40px);
+			font-weight: 400;
+		}
+	}
+	.career-desc {
+		width: 50%;
+		@media (max-width: 800px) {
+			width: 100%;
+		}
+		& > div {
+			@include vw(margin-bottom, 100px);
+		}
+		.career-view {
+			position: relative;
+			position: relative;
+			display: inline-block;
+			@include vw(padding-right, 10px);
+			font-family: var(--mainKor-font);
+			@include vw(font-size, 30px);
+			font-weight: 900;
+			cursor: pointer;
+			&:nth-last-child(2)::before {
+				content: 'fold';
+			}
+			&::before {
+				content: 'unfold';
+				position: absolute;
+				top: 50%;
+				left: 100%;
+				display: block;
+				color: #fff;
+				line-height: 1;
+				@include vw(padding, 5px);
+				@include vw(font-size, 16px);
+				font-weight: 500;
+				background-color: var(--black);
+				@include translateY(-50%);
+				@include transition(all, 0.3s);
+			}
+			span {
+				@include vw(margin-left, 10px);
+				line-height: 1;
+				font-family: var(--mainNum-font);
+				@include vw(font-size, 20px);
+				font-weight: 400;
+			}
+		}
+		.career-list {
+			li {
+				position: relative;
+				@include vw(margin-top, 15px);
+				@include vw(padding-left, 10px);
+				font-family: var(--mainKor-font);
+				@include vw(font-size, 18px);
+				font-weight: 400;
+				color: var(--black100);
+				&::before {
+					content: '';
+					position: absolute;
+					@include vw(top, 10px);
+					left: 0;
+					@include vw(width, 4px);
+					@include vw(height, 4px);
+					border-radius: 50%;
+					background-color: #000;
+				}
+			}
+		}
+	}
+}
