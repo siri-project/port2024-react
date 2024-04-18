@@ -441,32 +441,40 @@ button {
   }
 }
 #intro .intro-title {
+  height: 12.5vw;
   line-height: 1;
-  font-size: 6.9444444444vw;
-  font-weight: 800;
-  letter-spacing: -0.1388888889vw;
-  text-indent: -0.0694444444vw;
+  font-family: var(--mainKor-font);
+  font-size: 13.8888888889vw;
+  font-weight: 900;
   text-transform: uppercase;
-  white-space: nowrap;
+  color: #000;
 }
 @media screen and (min-width: 720px) {
   #intro .intro-title {
-    font-size: 50px;
+    height: 90px;
   }
 }
 @media screen and (min-width: 720px) {
   #intro .intro-title {
-    letter-spacing: -1px;
-  }
-}
-@media screen and (min-width: 720px) {
-  #intro .intro-title {
-    text-indent: -0.5px;
+    font-size: 100px;
   }
 }
 @media (max-width: 320px) {
   #intro .intro-title {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  #intro .intro-title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5.5555555556vw;
+    background-color: var(--mainBg-color);
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 720px) {
+  #intro .intro-title {
+    margin-bottom: 40px;
   }
 }
 #intro .intro-text {
@@ -605,12 +613,12 @@ button {
 }
 #career .career-title em {
   line-height: 2;
-  font-size: 6.9444444444vw;
+  font-size: 5.5555555556vw;
   font-weight: 400;
 }
 @media screen and (min-width: 720px) {
   #career .career-title em {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 #career .career-desc {
@@ -621,28 +629,287 @@ button {
     width: 100%;
   }
 }
-#career .career-desc span {
-  line-height: 1;
-  font-family: var(--mainNum-font);
-  font-size: 6.9444444444vw;
-  font-weight: 900;
+#career .career-desc > div {
+  margin-bottom: 13.8888888889vw;
 }
 @media screen and (min-width: 720px) {
-  #career .career-desc span {
-    font-size: 50px;
+  #career .career-desc > div {
+    margin-bottom: 100px;
   }
 }
-#career .career-desc p {
-  margin-bottom: 20.8333333333vw;
+#career .career-desc .career-view {
+  position: relative;
+  position: relative;
+  display: inline-block;
+  padding-right: 1.3888888889vw;
+  font-family: var(--mainKor-font);
+  font-size: 4.1666666667vw;
+  font-weight: 900;
+  cursor: pointer;
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view {
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view {
+    font-size: 30px;
+  }
+}
+#career .career-desc .career-view:nth-last-child(2)::before {
+  content: "fold";
+}
+#career .career-desc .career-view::before {
+  content: "unfold";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  color: #fff;
+  line-height: 1;
+  padding: 0.6944444444vw;
+  font-size: 2.2222222222vw;
+  font-weight: 500;
+  background-color: var(--black);
+  transform: translateY(-50%);
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: all;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view::before {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view::before {
+    font-size: 16px;
+  }
+}
+#career .career-desc .career-view span {
+  margin-left: 1.3888888889vw;
+  line-height: 1;
+  font-family: var(--mainNum-font);
+  font-size: 2.7777777778vw;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view span {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-view span {
+    font-size: 20px;
+  }
+}
+#career .career-desc .career-list li {
+  position: relative;
+  margin-top: 2.0833333333vw;
+  padding-left: 1.3888888889vw;
+  font-family: var(--mainKor-font);
+  font-size: 2.5vw;
+  font-weight: 400;
+  color: var(--black100);
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li {
+    font-size: 18px;
+  }
+}
+#career .career-desc .career-list li::before {
+  content: "";
+  position: absolute;
+  top: 1.3888888889vw;
+  left: 0;
+  width: 0.5555555556vw;
+  height: 0.5555555556vw;
+  border-radius: 50%;
+  background-color: #000;
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li::before {
+    top: 10px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li::before {
+    width: 4px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #career .career-desc .career-list li::before {
+    height: 4px;
+  }
+}
+
+#port {
+  width: 100%;
+  margin-top: 13.8888888889vw;
+}
+@media screen and (min-width: 720px) {
+  #port {
+    margin-top: 100px;
+  }
+}
+#port .port-inner {
+  padding: 2.2222222222vw;
+}
+@media screen and (min-width: 720px) {
+  #port .port-inner {
+    padding: 16px;
+  }
+}
+#port .port-title {
+  width: 100%;
+  height: 12.5vw;
+  margin-bottom: 5.5555555556vw;
+  line-height: 1;
+  font-family: var(--mainKor-font);
+  font-size: 13.8888888889vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom-width: 0.5555555556vw;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+}
+@media screen and (min-width: 720px) {
+  #port .port-title {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-title {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-title {
+    border-bottom-width: 4px;
+  }
+}
+@media (max-width: 800px) {
+  #port .port-title {
+    width: 100%;
+    height: auto;
+    background-color: var(--mainBg-color);
+  }
+}
+#port .port-title em {
+  line-height: 2;
+  font-size: 5.5555555556vw;
+  font-weight: 400;
+}
+@media screen and (min-width: 720px) {
+  #port .port-title em {
+    font-size: 40px;
+  }
+}
+#port .port-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 7000px;
+}
+#port .port-item {
+  width: 69.4444444444vw;
+  height: 69.4444444444vw;
+  margin-right: 2.7777777778vw;
+  padding: 2.7777777778vw;
+  background-color: var(--subBg100);
+}
+@media screen and (min-width: 720px) {
+  #port .port-item {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-item {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-item {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #port .port-item {
+    padding: 20px;
+  }
+}
+#port .port-item.p1 {
+  background-color: var(--subBg100);
+}
+#port .port-item.p2 {
+  background-color: var(--subBg200);
+}
+#port .port-item.p3 {
+  background-color: var(--subBg300);
+}
+#port .port-item.p4 {
+  background-color: var(--subBg400);
+}
+#port .port-item.p5 {
+  background-color: var(--subBg500);
+}
+#port .port-item.p6 {
+  background-color: var(--subBg500);
+}
+#port .port-item .num {
+  font-family: var(--mainNum-font);
   font-size: 4.1666666667vw;
 }
 @media screen and (min-width: 720px) {
-  #career .career-desc p {
-    margin-bottom: 150px;
+  #port .port-item .num {
+    font-size: 30px;
   }
 }
+#port .port-item .img {
+  display: block;
+  margin-top: -2.7777777778vw;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: all;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
 @media screen and (min-width: 720px) {
-  #career .career-desc p {
-    font-size: 30px;
+  #port .port-item .img {
+    margin-top: -20px;
+  }
+}
+#port .port-item .img img {
+  border-radius: 6.9444444444vw;
+}
+@media screen and (min-width: 720px) {
+  #port .port-item .img img {
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

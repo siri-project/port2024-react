@@ -1,0 +1,112 @@
+#port {
+	width: 100%;
+	@include vw(margin-top, 100px);
+	.port-inner {
+		@include vw(padding, 16px);
+	}
+	.port-title {
+		width: 100%;
+		@include vw(height, 90px);
+		@include vw(margin-bottom, 40px);
+		line-height: 1;
+		font-family: var(--mainKor-font);
+		@include vw(font-size, 80px);
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #000;
+		@include vw(border-bottom-width, 4px);
+		border-bottom-style: solid;
+		border-bottom-color: #000;
+		@media (max-width: 800px) {
+			width: 100%;
+			height: auto;
+			background-color: var(--mainBg-color);
+		}
+		em {
+			line-height: 2;
+			@include vw(font-size, 40px);
+			font-weight: 400;
+		}
+	}
+	.port-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		width: 7000px;
+	}
+	.port-item {
+		@include vw(width, 400px);
+		@include vw(height, 500px);
+		@include vw(margin-right, 20px);
+		@include vw(padding, 20px);
+		background-color: var(--subBg100);
+		&.p1 {
+			background-color: var(--subBg100);
+		}
+		&.p2 {
+			background-color: var(--subBg200);
+		}
+		&.p3 {
+			background-color: var(--subBg300);
+		}
+		&.p4 {
+			background-color: var(--subBg100);
+		}
+		&.p5 {
+			background-color: var(--subBg200);
+		}
+		&.p6 {
+			background-color: var(--subBg300);
+		}
+		&:hover {
+			.img {
+				margin-top: 0;
+				img {
+					filter: saturate(100%);
+				}
+			}
+			.site {
+				color: #fff;
+				background-color: var(--black100);
+			}
+		}
+		.num {
+			font-family: var(--mainNum-font);
+			@include vw(font-size, 20px);
+		}
+		.img {
+			display: block;
+			// @include vw(margin-top, -20px);
+			@include vw(margin-bottom, 20px);
+			@include transition(all, 0.3s);
+			img {
+				width: 100%;
+				@include vw(border-radius, 5px);
+				filter: saturate(0%);
+				@include transition(all, 0.3s);
+			}
+		}
+		.title {
+			@include vw(margin-bottom, 20px);
+			@include vw(padding-bottom, 10px);
+			text-align: center;
+			@include vw(font-size, 20px);
+			font-weight: 700;
+			color: var(--black100);
+			@include vw(border-bottom-width, 2px);
+			border-bottom-style: solid;
+			border-bottom-color: var(--black100);
+		}
+		.desc {
+			@include vw(font-size, 18px);
+		}
+		.site {
+			display: block;
+			@include vw(margin-top, 30px);
+			@include vw(padding, 10px 20px);
+			text-align: center;
+			@include vw(border-width, 2px);
+			border-style: solid;
+			border-color: var(--black100);
+		}
+	}
+}

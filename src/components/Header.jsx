@@ -9,10 +9,10 @@ const headerNav = [
 		title: "career",
 		url: "#career"
 	},
-	{
-		title: "site",
-		url: "#site"
-	},
+	// {
+	// 	title: "site",
+	// 	url: "#site"
+	// },
 	{
 		title: "portfolio",
 		url: "#port"

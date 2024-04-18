@@ -3,7 +3,7 @@ import React from "react";
 import about from "../assets/img/about.jpg"
 
 const introText = {
-	title: 'portfolio developer',
+	title: 'UI developer',
 	desc: ['My', 'portfolio'],
 };
 
