@@ -35,7 +35,7 @@
 	}
 	.port-item {
 		@include vw(width, 400px);
-		@include vw(height, 500px);
+		@include vw(height, 550px);
 		@include vw(margin-right, 20px);
 		@include vw(padding, 20px);
 		background-color: var(--subBg100);
