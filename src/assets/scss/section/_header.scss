@@ -16,11 +16,11 @@
 	.header-logo {
 		line-height: 1;
 		text-align: center;
-		@include vw(font-size, 24px);
+		@include vw(font-size, 20px);
 		text-transform: uppercase;
 		em {
 			display: block;
-			@include vw(font-size, 20px);
+			@include vw(font-size, 24px);
 			color: #000;
 		}
 	}

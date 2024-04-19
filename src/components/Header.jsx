@@ -35,8 +35,8 @@ const Header = () => {
 			<div className="header-inner">
 				<div className="header-logo">
 					<a href="/">
-						portfolio
-						<em>react.js</em>
+						siri's
+						<em>portfolio</em>
 					</a>
 				</div>
 				<nav className={`header-nav ${show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
