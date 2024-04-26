@@ -34,6 +34,7 @@
 		width: 7000px;
 	}
 	.port-item {
+		position: relative;
 		@include vw(width, 400px);
 		@include vw(height, 550px);
 		@include vw(margin-right, 20px);
@@ -100,6 +101,10 @@
 			@include vw(font-size, 18px);
 		}
 		.site {
+			position: absolute;
+			@include vw(right, 20px);
+			@include vw(bottom, 20px);
+			@include vw(left, 20px);
 			display: block;
 			@include vw(margin-top, 30px);
 			@include vw(padding, 10px 20px);
