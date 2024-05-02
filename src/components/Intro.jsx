@@ -5,7 +5,7 @@ import about from "../assets/img/about.jpg"
 const introText = {
 	title: [
 		"Hello :)",
-		"I'm eunsil jang,",
+		"I'm eunsil jang, ",
 		"UI Developer.",
 	],
 	desc: [
