@@ -6,25 +6,26 @@
 	}
 	.port-title {
 		width: 100%;
-		@include vw(height, 90px);
 		@include vw(margin-bottom, 40px);
 		line-height: 1;
 		font-family: var(--mainKor-font);
-		@include vw(font-size, 80px);
+		@include vw(font-size, 60px);
 		font-weight: 900;
 		text-transform: uppercase;
 		color: #000;
 		@include vw(border-bottom-width, 4px);
 		border-bottom-style: solid;
 		border-bottom-color: #000;
-		@media (max-width: 800px) {
-			width: 100%;
-			height: auto;
-			background-color: var(--mainBg-color);
+		@include breakpoint(maxMobile) {
+			font-size: 40px;
+		}
+		@include breakpoint(minDesktop) {
+			height: 90px;
+			font-size: 70px;
 		}
 		em {
 			line-height: 2;
-			@include vw(font-size, 40px);
+			@include vw(font-size, 30px);
 			font-weight: 400;
 		}
 	}
@@ -39,26 +40,10 @@
 		@include vw(height, 550px);
 		@include vw(margin-right, 20px);
 		@include vw(padding, 20px);
-		background-color: var(--subBg100);
-		&.p1 {
-			background-color: var(--subBg100);
-		}
-		&.p2 {
-			background-color: var(--subBg200);
-		}
-		&.p3 {
-			background-color: var(--subBg300);
-		}
-		&.p4 {
-			background-color: var(--subBg100);
-		}
-		&.p5 {
-			background-color: var(--subBg200);
-		}
-		&.p6 {
-			background-color: var(--subBg300);
-		}
+		color: #000;
+		background-color: rgba($color: #006d77, $alpha: 0.7);
 		&:hover {
+			color: #fff;
 			.img {
 				margin-top: 0;
 				img {
@@ -66,8 +51,7 @@
 				}
 			}
 			.site {
-				color: #fff;
-				background-color: var(--black100);
+				background-color: #000;
 			}
 		}
 		.num {
@@ -92,10 +76,9 @@
 			text-align: center;
 			@include vw(font-size, 20px);
 			font-weight: 700;
-			color: var(--black100);
 			@include vw(border-bottom-width, 2px);
 			border-bottom-style: solid;
-			border-bottom-color: var(--black100);
+			border-bottom-color: currentColor;
 		}
 		.desc {
 			@include vw(font-size, 18px);
@@ -111,7 +94,7 @@
 			text-align: center;
 			@include vw(border-width, 2px);
 			border-style: solid;
-			border-color: var(--black100);
+			border-color: #000;
 		}
 	}
 }

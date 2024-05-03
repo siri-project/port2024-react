@@ -1,5 +1,5 @@
 #contact {
-	height: 100vh;
+	height: 50vh;
 	.contact-inner {
 		display: flex;
 		align-items: flex-start;
@@ -22,7 +22,7 @@
 		color: #000;
 		em {
 			line-height: 2;
-			@include vw(font-size, 40px);
+			@include vw(font-size, 30px);
 			font-weight: 400;
 			@media (max-width: 800px) {
 				display: block;
@@ -38,9 +38,9 @@
 		width: 100%;
 		@include vw(height, 200px);
 		color: #fff;
-		background-color: #000;
+		background-color: rgba($color: #006d77, $alpha: 0.7);
 		.text {
-			text-align: center;
+			text-align: center;	
 			div {
 				display: inline-block;
 				@include vw(padding, 0 16px);

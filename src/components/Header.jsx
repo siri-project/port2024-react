@@ -1,27 +1,6 @@
 import React, { useState } from "react";
 
-const headerNav = [
-	{
-		title: "intro",
-		url: "#intro"
-	},
-	{
-		title: "career",
-		url: "#career"
-	},
-	// {
-	// 	title: "site",
-	// 	url: "#site"
-	// },
-	{
-		title: "portfolio",
-		url: "#port"
-	},
-	{
-		title: "contact",
-		url: "#contact"
-	},
-];
+import { headerNav } from "../constants";
 
 const Header = () => {
 	const [show, setShow] = useState(false);
@@ -33,12 +12,12 @@ const Header = () => {
 	return (
 		<header id="header" role="banner">
 			<div className="header-inner">
-				<div className="header-logo">
+				<h1 className="header-logo">
 					<a href="/">
-						siri's
+						eunsil's
 						<em>portfolio</em>
 					</a>
-				</div>
+				</h1>
 				<nav className={`header-nav ${show ? "show" : ""}`} role="navigation" aria-label="메인 메뉴">
 					<ul>
 						{headerNav.map((nav, key) =>(

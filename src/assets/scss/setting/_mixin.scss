@@ -158,87 +158,6 @@
 	}
 }
 
-// close
-// @include close(30px, 30px, 1px, #000);
-@mixin close($width, $height, $thickness, $color) {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	@include vw(width, $width);
-	@include vw(height, $height);
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		display: block;
-		width: $width / 2;
-		height: $thickness;
-		margin-left: -($width / 2) / 2;
-		background-color: $color;
-	}
-	&::before { @include rotate(45deg); }
-	&::after { @include rotate(315deg); }
-	span {
-		position: absolute;
-		display: inline-block;
-		overflow: hidden;
-		clip: rect(0 0 0 0);
-		width: 0px;
-		height: 0px;
-		margin: -1px;
-		padding: 0;
-		word-break: keep-all;
-		white-space: nowrap;
-		color: transparent;
-		border: 0;
-		text-indent: -9999px;
-	}
-}
-
-// closeButton
-// @include closeButton(#355ef0, 40px, 2px, #fff);
-@mixin closeButton($bgColor, $size, $thickness, $lineColor) {
-	& {
-		display: inline-block;
-		width: $size;
-		height: $size;
-		padding: $size/2;
-		cursor: pointer;
-	}
-
-	@if $bgColor {
-		background-color: $bgColor;
-	} @else {
-		background-color: transparent;
-	}
-
-	&::before,
-	&::after {
-		content: '';
-		display: block;
-		width: 140%;
-		height: $thickness;
-		background: $lineColor;
-	}
-
-	&::before {
-		margin-top: -$thickness/4;
-		margin-left: $thickness/2;
-		@include rotate(45deg);
-		@include transformOrigin(0 0);
-	}
-
-	&::after {
-		margin-left: -41%;
-		margin-top: -$thickness;
-		@include rotate(-45deg);
-		@include transformOrigin(100% 0);
-	}
-}
-
 // arrow
 // @include arrow(left, 8px, 8px, 2px, $color-base-dark);
 @mixin arrow($direction, $width, $height, $borderWidth, $color) {
@@ -277,81 +196,6 @@
 		}
 	}
 }
-
-// arrow for slide
-// @include slideArrow(left, 60px, 60px, 2px, #000);
-// @include slideArrow(right, 60px, 60px, 2px, #000);
-// @include slideArrow(left, 60px, 60px, 2px, #fff, rgba(0,0,0,.5));
-// @include slideArrow(right, 60px, 60px, 2px, #fff, rgba(0,0,0,.5));
-// @include slideArrow(left, 60px, 60px, 2px, #fff, rgba(0,0,0,.5), $margin: 620px);
-// @include slideArrow(right, 60px, 60px, 2px, #fff, rgba(0,0,0,.5), $margin: 620px);
-@mixin slideArrow($direction, $width, $height, $borderWidth, $borderColor, $bgColor: null, $margin: null) {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
-	display: block;
-	@include vw(width, $width);
-	@include vw(height, $height);
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-	color: transparent;
-	text-indent: -9999px;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	@include translateY(-50%);
-
-	@if $direction == 'right' {
-		right: 50%;
-		@if $margin {
-			@include vw(margin-right, -$margin);
-		}
-	} @else if $direction == 'left' {
-		left: 50%;
-		@if $margin {
-			@include vw(margin-left, -$margin);
-		}
-	}
-
-	@if $bgColor {
-		background: $bgColor;
-	} @else {
-		background: none;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		display: block;
-		@include vw(width, ($width/4));
-		@include vw(height, ($height/4));
-		border-width: 0;
-		border-style: solid;
-		border-color: $borderColor;
-
-		@if $direction == 'right' {
-			border-top-width: $borderWidth;
-			border-right-width: $borderWidth;
-			@include transform(translate(-75%, -50%) rotate(45deg));
-		} @else if $direction == 'left' {
-			border-bottom-width: $borderWidth;
-			border-left-width: $borderWidth;
-			@include transform(translate(-25%, -50%) rotate(45deg));
-		} @else if $direction == 'bottom' {
-			border-bottom-width: $borderWidth;
-			border-right-width: $borderWidth;
-			@include transform(translate(-50%, -75%) rotate(45deg));
-		} @else if $direction == 'top' {
-			border-top-width: $borderWidth;
-			border-left-width: $borderWidth;
-			@include transform(translate(-50%, -25%) rotate(45deg));
-		}
-	}
-}
-
 
 // rem
 // @include rem(margin, 25px 20px 0);
@@ -520,36 +364,6 @@
 	background: nth(nth($color-stops, 1), 1);
 	background: -webkit-radial-gradient(legacy-direction($direction), $color-stops);
 	background: radial-gradient($direction, $color-stops);
-}
-
-// @include bg($color: #001d3d, $url: '#{$img-path}/pc/bg_top.jpg');
-// @include bg($color: #a5d0fb, $url: '#{$img-path}/pc/bg_title.jpg', $size: cover);
-@mixin bg($color: null, $url: null, $repeat: null, $position: null, $size: null){
-	@if $color {
-		background-color: $color;
-	}
-
-	@if $url {
-		background-image: url($url);
-	}
-
-	@if $repeat {
-		background-repeat: $repeat;
-	} @else {
-		background-repeat: no-repeat;
-	}
-
-	@if $position {
-		background-position: $position;
-	} @else {
-		background-position: center top;
-	}
-
-	@if $size {
-		background-size: $size;
-	} @else {
-		background-size: auto;
-	}
 }
 
 // multiple text ellipsis

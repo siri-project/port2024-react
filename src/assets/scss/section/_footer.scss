@@ -3,8 +3,11 @@
 		@include vw(padding, 50px);
 	}
 	.footer-right {
-		@include vw(font-size, 18px);
+		@include vw(font-size, 30px);
 		text-align: center;
 		text-transform: uppercase;
+		@include rwdWidth(1024px){
+			font-size: 20px;
+		}
 	}
 }

@@ -1,9 +1,16 @@
-import React from "react"; // react 라이브러리 호출
+import React, { useEffect } from "react"; // react 라이브러리 호출
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // react-router-dom에서 필요한 모듈 호출
 
 import HomeView from "./views/HomeView"; // HomeView라는 이름으로, 해당 경로에 있는 컴포넌트 호출
+import lenis from "./utils/lenis";
+import link from "./utils/link";
 
 const App = () => { // App 이라는 이름의 상수 선언, 화살표 함수(arrow function)로 정의된 함수형 컴포넌트는 입력을 받아서 화면에 렌더링할 JSX요소를 반환하는 역할.
+	useEffect (() => {
+		lenis();
+		link();
+	}, []);
+
 	return ( // 함수형 컴포넌트에서 반환하는 JSX(Javascript XML)요소
 		<BrowserRouter>
 			<Routes>
