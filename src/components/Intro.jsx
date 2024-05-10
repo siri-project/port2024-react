@@ -12,7 +12,6 @@ const Intro = () => {
 					<div>{introText.title[0]}</div>
 					<div>{introText.title[1]}</div>
 					<div>{introText.title[2]}</div>
-					<div>{introText.title[3]}</div>
 				</h2>
 				<div className="intro-text">
 					<div className="intro-img">

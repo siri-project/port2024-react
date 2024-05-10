@@ -19,7 +19,7 @@ const Port = () => {
 			ease: "none",
 			scrollTrigger: {
 				trigger: horizontal,
-				start: "top 56px",
+				start: "top 80px",
 				end: () => "+=" + horizontal.offsetWidth,
 				pin: true,
 				scrub: 1,

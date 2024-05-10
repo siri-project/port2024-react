@@ -16,10 +16,10 @@
 		@include vw(border-bottom-width, 4px);
 		border-bottom-style: solid;
 		border-bottom-color: #000;
-		@include breakpoint(maxMobile) {
+		@include rwdWidth(720px) {
 			font-size: 40px;
 		}
-		@include breakpoint(minDesktop) {
+		@include rwdWidth(1024px) {
 			height: 90px;
 			font-size: 70px;
 		}
