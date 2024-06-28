@@ -23,6 +23,7 @@ const Port = () => {
 				end: () => "+=" + horizontal.offsetWidth,
 				pin: true,
 				scrub: 1,
+				markers: false,
 				invalidateOnRefresh: true,
 				anticipatePin: 1,
 			},

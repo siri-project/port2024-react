@@ -14,7 +14,7 @@ const Header = () => {
 			<div className="header-inner">
 				<h1 className="header-logo">
 					<a href="/">
-						eunsil's
+						eunsil jang's
 						<em>portfolio</em>
 					</a>
 				</h1>

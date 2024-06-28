@@ -38,8 +38,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		justify-content: center;
+		justify-content: flex-start;
 		height: 70vh;
+		@include vw(padding-top, 100px);
 		@include boxSizing(border-box);
 		@include rwdWidth(1100px){
 			flex-direction: inherit;
@@ -96,6 +97,9 @@
 				display: inline-block;
 				font-size: 26px;
 			}
+			@include rwdWidth(1100px) {
+				margin-left: 0;
+			}
 		}
 		.text {
 			@include vw(margin-left, 20px);
@@ -108,10 +112,10 @@
 				margin-left: 10px;
 				font-size: 20px;
 			}
-			// @include rwdWidth(1100px) {
-			// 	display: inline-block;
-			// 	margin-left: 10px;
-			// }
+			@include rwdWidth(1100px) {
+				display: block;
+				margin-left: 0;
+			}
 			span {
 				@include vw(margin, 0 5px);
 				&:first-child {
@@ -129,7 +133,7 @@
 				width: 50%;
 			}
 			.career-list {
-				@include vw(margin-top, 10px);
+				@include vw(margin-top, 20px);
 				@include vw(padding, 20px);
 				@include rwdWidth(720px) {
 					margin-top: 0;
@@ -143,7 +147,7 @@
 					@include vw(margin-top, 5px);
 					@include vw(padding-left, 10px);
 					font-family: var(--mainKor-font);
-					@include vw(font-size, 20px);
+					@include vw(font-size, 22px);
 					font-weight: 400;
 					@include rwdWidth(720px) {
 						font-size: 16px;

@@ -23,9 +23,9 @@ export const headerNav = [
 
 export const introText = {
 	title: [
-		"Hello :)",
-		"I'm eunsil jang, ",
-		"UI Developer.",
+		"eunsil jang",
+		"Web Publisher / UI Developer / FrontEnd Developer",
+		"",
 	]
 };
 
