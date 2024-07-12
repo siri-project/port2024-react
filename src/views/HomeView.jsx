@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Intro from "../components/Intro";
+import Intro from "../components/About";
 import About from "../components/About";
 import Career from "../components/Career";
 import Port from "../components/Port";
@@ -15,7 +15,6 @@ const HomeView = () => {
 			<Skip />
 			<Header />
 			<Main>
-				<Intro />
 				<About />
 				<Career />
 				<Port />

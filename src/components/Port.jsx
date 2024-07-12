@@ -1,41 +1,43 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+// import React, { useEffect, useRef } from "react";
 
 import { portText } from "../constants";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Port = () => {
-	const horizontalRef = useRef(null);
-	const sectionsRef = useRef([]);
+	// const horizontalRef = useRef(null);
+	// const sectionsRef = useRef([]);
 
-	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
+	// useEffect(() => {
+	// 	gsap.registerPlugin(ScrollTrigger);
 
-		const horizontal = horizontalRef.current;
-		const sections = sectionsRef.current;
+	// 	const horizontal = horizontalRef.current;
+	// 	const sections = sectionsRef.current;
 
-		let scrollTween = gsap.to(sections, {
-			xPercent: -120 * (sections.length - 1),
-			ease: "none",
-			scrollTrigger: {
-				trigger: horizontal,
-				start: "top 80px",
-				end: () => "+=" + horizontal.offsetWidth,
-				pin: true,
-				scrub: 1,
-				markers: false,
-				invalidateOnRefresh: true,
-				anticipatePin: 1,
-			},
-		});
+	// 	let scrollTween = gsap.to(sections, {
+	// 		xPercent: -120 * (sections.length - 1),
+	// 		ease: "none",
+	// 		scrollTrigger: {
+	// 			trigger: horizontal,
+	// 			start: "top 80px",
+	// 			end: () => "+=" + horizontal.offsetWidth,
+	// 			pin: true,
+	// 			scrub: 1,
+	// 			markers: false,
+	// 			invalidateOnRefresh: true,
+	// 			anticipatePin: 1,
+	// 		},
+	// 	});
 
-		return () => {
-			scrollTween.kill();
-		};
-	}, []);
+	// 	return () => {
+	// 		scrollTween.kill();
+	// 	};
+	// }, []);
 
 	return (
-		<section id="port" ref={horizontalRef}>
+		<section id="port">
+			{/* ref={horizontalRef} */}
 			<div className="port-inner">
 				<h2 className="port-title">
 					portfolio
@@ -43,7 +45,8 @@ const Port = () => {
 				</h2>
 				<div className="port-wrap">
 					{portText.map((port, key) => (
-						<article className={`port-item p${key + 1}`} key={key} ref={(el) => (sectionsRef.current[key] = el)}>
+						<article className={`port-item p${key + 1}`} key={key}>
+							{/* ref={(el) => (sectionsRef.current[key] = el)} */}
 							<span className="num">{port.num}.</span>
 							<a href={port.view} className="img" target="_blank" rel="noreferrer">
 								<img src={port.img} alt={port.title} />

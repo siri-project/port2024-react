@@ -29,11 +29,11 @@
 			font-weight: 400;
 		}
 	}
-	.port-wrap {
-		display: flex;
-		flex-wrap: wrap;
-		width: 7000px;
-	}
+	// .port-wrap {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	width: 7000px;
+	// }
 	.port-item {
 		position: relative;
 		@include vw(width, 400px);
@@ -41,7 +41,6 @@
 		@include vw(margin-right, 20px);
 		@include vw(padding, 20px);
 		color: #000;
-		background-color: rgba($color: #006d77, $alpha: 0.7);
 		&:hover {
 			color: #fff;
 			.img {

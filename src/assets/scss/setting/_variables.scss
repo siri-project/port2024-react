@@ -1,10 +1,10 @@
 :root {
 	--mainEng-font: "Montserrat";
-	--mainKor-font: "nanumSquareNeo";
+	--mainKor-font: "Noto Sans KR", sans-serif;
 	--mainNum-font: "gmarket";
 
-	--mainBg-color: #83c5be;
-	--subBg100: #15616d;
+	--main-color: #0f172a;
+	--sub-color: #e2e8f0;
 	--subBg200: #006d77;
 	--subBg300: #0a9396;
 	--subBg400: #94d2bd;
@@ -31,5 +31,5 @@
 }
 
 body {
-	background-color: var(--mainBg-color);
+	background-color: var(--main-color);
 }

@@ -1,59 +1,43 @@
 #header {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 100;
-	width: 100%;
 	.header-inner {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		@include vw(padding, 16px);
-		background-color: rgba(0,0,0,0.1);
-		backdrop-filter: blur(15px);
+		@include vw(padding, 40px);
+		text-align: left;
 	}
-	.header-logo {
-		line-height: 1;
-		text-align: center;
-		@include vw(font-size, 20px);
-		font-weight: 400;
-		text-transform: uppercase;
-		em {
-			display: block;
-			@include vw(font-size, 24px);
-			color: #000;
-		}
+	.title-main {
+		@include vw(margin, 10px 0 0);
+		@include vw(font-size, 80px);
+		// color: rgba($color: #fff, $alpha: 0.6);
+	}
+	.title-sub {
+		@include vw(margin, 5px 0 0);
+		@include vw(font-size, 60px);
+		// color: rgba($color: #fff, $alpha: 0.6);
+	}
+	.text {
+		@include vw(margin, 20px 0 0);
+		@include vw(font-size, 30px);
+		// color: rgba($color: #fff, $alpha: 0.5);
 	}
 	.header-nav {
-		@media (max-width: 800px) {
-			display: none;
-		}
-		&.show {
+		display: none;
+		@media (min-width: 1024px) {
 			display: block;
-			& + .header-nav-mobile {
-				span::before,
-				span::after {
-					@include vw(width, 20px);
-				}
-			}
-			ul {
-				position: absolute;
-				top: 100%;
-				right: 0;
-				z-index: 110;
+		}
+		ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 110;
+			display: block;
+			@include vw(min-width, 100px);
+			@include vw(padding, 20px 0);
+			backdrop-filter: blur(15px);
+			li {
 				display: block;
-				@include vw(min-width, 100px);
-				@include vw(padding, 20px 0);
-				background-color: rgba(0,0,0,0.1);
-				backdrop-filter: blur(15px);
-				li {
+				text-align: right;
+				a {
 					display: block;
-					text-align: right;
-					a {
-						display: block;
-						@include vw(padding, 10px);
-					}
+					@include vw(padding, 10px);
 				}
 			}
 		}
@@ -78,40 +62,6 @@
 				&:hover::before {
 					@include scaleX(1);
 				}
-			}
-		}
-	}
-	.header-nav-mobile {
-		display: none;
-		@include vw(width, 40px);
-		@include vw(height, 40px);
-		cursor: pointer;
-		@media (max-width: 800px) {
-			display: block;
-		}
-		span {
-			position: relative;
-			display: block;
-			@include vw(width, 40px);
-			@include vw(height, 2px);
-			@include vw(margin-top, 20px);
-			background-color: #000;
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-				@include vw(width, 40px);
-				@include vw(height, 2px);
-				background-color: #000;
-				@include transition(width, 0.3s);
-			}
-			&::before {
-				@include vw(top, 6px);
-				right: 0;
-			}
-			&::after {
-				@include vw(bottom, 6px);
-				left: 0;
 			}
 		}
 	}

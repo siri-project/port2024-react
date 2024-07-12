@@ -1,35 +1,30 @@
 import React from "react";
 
-import { aboutText, aboutSkill, careerText } from "../constants";
+import aboutImg from "../assets/img/about.jpg";
 
-const About = () => {
+import { aboutText } from "../constants";
+
+const about = () => {
 	return (
 		<section id="about">
 			<div className="about-inner">
-				<h2 className="about-title">
-					about
-					<em>me</em>
-				</h2>
-				<div className="about-desc">
-					{aboutText.map((about, key) => (
-						<article className={`about-item a${key+1}`} key={key}>
-							<div className="about-view">
-								<h3 className="title">{about.title}</h3>
-
-								<ul className="about-list">
-									{about.text.map((text, idx) => (
-										<li key={idx}>
-											{text}
-										</li>
-									))}
-								</ul>
-							</div>
-						</article>
-					))}
+				<div className="about-img">
+					<img src={aboutImg} alt="about" />
+				</div>
+				<div className="about-text">
+					<p>{aboutText.title[0]}</p>
+					<p>{aboutText.title[1]}</p>
+					<p>{aboutText.title[2]}</p>
+					<p>{aboutText.title[3]}</p>
+					<p>{aboutText.title[4]}</p>
+					<p>{aboutText.title[5]}</p>
+					<p>{aboutText.title[6]}</p>
+					<p>{aboutText.title[7]}</p>
+					<p>{aboutText.title[8]}</p>
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default About;
+export default about;
