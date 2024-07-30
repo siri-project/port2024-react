@@ -5,10 +5,11 @@
 @import "setting/variables";
 @import "setting/functions";
 @import "setting/mixin";
+@import "setting/extend";
 @import "setting/reset";
 
 // section
-@import "section/base";
+@import "section/layout";
 @import "section/header";
 @import "section/about";
 @import "section/career";

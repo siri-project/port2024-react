@@ -1,0 +1,45 @@
+#skip a {
+	position: absolute;
+	left: 10px;
+	top: -92px;
+	z-index: 10000;
+	font-size: 1rem;
+	padding: 10px 30px;
+	color: var(--white);
+	background: var(--black);
+	&:focus,
+	&:active {
+		top: 10px;
+	}
+}
+
+#root {
+	position: relative;
+	@media (min-width: 1024px) {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	section {
+		position: relative;
+		@include vw(margin-top, 80px);
+		.inner {
+			@include vw(padding, 0 40px);
+		}
+		.title-main {
+			position: sticky;
+			top: 0;
+			@include vw(padding, 20px 0);
+			@include vw(font-size, 40px);
+			font-weight: 900;
+			text-transform: uppercase;
+			@media (min-width: 1024px) {
+				display: none;
+			}
+		}
+		.title-sub {
+			@include vw(font-size, 36px);
+			font-weight: 600;
+		}
+	}
+}

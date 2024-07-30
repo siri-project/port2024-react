@@ -10,13 +10,13 @@ const Header = () => {
 	// };
 
 	return (
-		<header id="header" role="banner">
-			<div className="header-inner">
+		<header id="header" role="header">
+			<div className="inner">
 				<h1 className="title-main">
 					<a href="/">Eunsil Jang</a>
 				</h1>
-				<h2 className="title-sub">My Job</h2>
-				<p className="text">Hello!</p>
+				<h2 className="title-sub">UI Developer</h2>
+				<p className="text">느리지만 꾸준히 노력하는 사람이 되자!</p>
 				<nav className="header-nav" role="navigation" aria-label="메인 메뉴">
 					<ul>
 						{headerNav.map((nav, key) =>(

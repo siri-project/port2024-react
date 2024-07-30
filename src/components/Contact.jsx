@@ -5,9 +5,9 @@ import { contactText } from "../constants";
 const Contact = () => {
 	return (
 		<section id="contact">
-			<div className="contact-inner">
-				<h2 className="contact-title">
-					Contact
+			<div className="inner">
+				<h2 className="title-main">
+					contact
 				</h2>
 				<div className="contact-text">
 					<div className="text">

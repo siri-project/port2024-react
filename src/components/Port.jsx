@@ -38,10 +38,9 @@ const Port = () => {
 	return (
 		<section id="port">
 			{/* ref={horizontalRef} */}
-			<div className="port-inner">
-				<h2 className="port-title">
+			<div className="inner">
+				<h2 className="title-main">
 					portfolio
-					<em>작업물</em>
 				</h2>
 				<div className="port-wrap">
 					{portText.map((port, key) => (

@@ -5,23 +5,28 @@ import { careerText } from "../constants";
 const Career = () => {
 	return (
 		<section id="career">
-			<div className="career-inner">
-				<h2 className="career-title">
+			<div className="inner">
+				<h2 className="title-main">
 					career
-					<em>경력</em>
 				</h2>
-				<div className="career-wrap">
+				<div className="career-view">
 					{careerText.map((career, key) => (
-						<article className={`career-item c${key+1}`} key={key}>
-							<div className="career-view">
-								<h3 className="title">{career.title}</h3>
-								<div className="text">
-									<span className="team">{career.team}</span>/
-									<span className="position">{career.position}</span>
-									<span className="period">{career.period}</span>
-								</div>
-							</div>
-							<div className="career-desc">
+						<article className={`career-item career-${key+1}`} key={key}>
+							<p className="period">{career.period}</p>
+							<h3 className="title-sub">{career.title}</h3>
+							<p className="info">
+								<span className="team">{career.team}</span>/
+								<span className="position">{career.position}</span>
+							</p>
+
+							<ul className="skill-list">
+								{career.skill.map((skill, idx) => (
+									<li key={idx}>
+										<span>{skill}</span>
+									</li>
+								))}
+							</ul>
+							{/* <div className="career-text">
 								<ul className="career-list">
 									{career.project.map((project, idx) => (
 										<li key={idx}>
@@ -29,7 +34,7 @@ const Career = () => {
 										</li>
 									))}
 								</ul>
-							</div>
+							</div> */}
 						</article>
 					))}
 				</div>

@@ -11,28 +11,24 @@ export const headerNav = [
 		title: "portfolio",
 		url: "#port"
 	},
-	{
-		title: "contact",
-		url: "#contact"
-	},
 ];
 
 export const aboutText = {
 	title: [
-		"안녕하세요.",
-		"저는  FE 개발자를 목표로 꾸준히 노력하고 있는 웹 퍼블리셔입니다.",
-		"현재 자사 사이트 운영 및 신규 프로젝트 구축을 맡고 있으며, 파트장으로써 팀원 일정 관리도 하고 있습니다.",
-		"*웹 표준과 웹 접근성을 준수*하여 사용자에게 편리하고 접근성 높은 웹사이트를 구축할 수 있습니다.",
-		"다양한 기기에서 최적의 사용자 경험을 제공할 수 있는 *반응형 웹사이트를 구축*할 수 있습니다.",
-		"*동적인 웹 요소와 모션 그래픽을 활용*하여 사용자의 관심을 끌고 몰입도를 높이는 작업을 수행할 수 있습니다.",
-		"*마크업 가이드에 따라 일관된 작업물을 제공*하여 사용자에게 최상의 경험을 제공할 수 있습니다.",
-		"버전 관리 시스템을 사용하여 코드 관리 및 협업을 효율적으로 수행할 수 있습니다.",
+		"안녕하세요. UI개발자 장은실입니다. :)",
+		"현재 자사 사이트 운영과 구축 업무를 담당하고 있습니다.",
+		"FE 개발자를 목표로 느리지만 꾸준히 노력하고 있습니다.",
 
-		"메모하는 습관을 길러 *일정 관리*를 잘하려고 노력합니다.",
-		"소통을 통해 문제 해결에 노력합니다.",
-		"SI, 웹에이전시, 교육업계 등 여러 직군의 회사를 다니며 다수의 프로젝트 구축 및 운영 업무 경험이 있습니다.",
-
-		"이러한 경험과 능력을 바탕으로 더 나은 웹사이트를 구축하고, 사용자에게 최상의 경험을 제공할 수 있도록 노력하겠습니다.",
+		"저는 <strong>웹 표준과 웹 접근성을 준수</strong>하여 사용자에게 보다 편리하고 접근성 높은 웹사이트를 구축할 수 있습니다.",
+		"다양한 기기에서 최적의 사용자 경험을 제공할 수 있는 <strong>반응형 웹사이트를 구축</strong>할 수 있습니다.",
+		"<strong>동적인 웹 요소와 모션 그래픽을 활용</strong>하여 사용자의 관심을 끌고 몰입도를 높이는 작업을 수행할 수 있습니다.",
+		"<strong>가이드에 따라 일관된 작업물을 제공</strong>하여 사용자에게 최상의 경험을 제공할 수 있습니다.",
+		"<strong>버전 관리 시스템</strong>을 사용하여 코드 관리 및 협업을 효율적으로 수행할 수 있습니다.",
+		
+		"정리를 잘하고 메모도 꼼꼼하게 하는 편이라 팀 내 문서 작업을 도맡아 했습니다.",
+		"완벽주의 성향으로 작업 시 최선을 다해 높은 품질의 결과물을 제공하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
+		"업무 진행 시 발생하는 문제는 독단적으로 해결하기 보다, 관련 작업자들과 소통하여 최선의 방법으로 해결합니다.",
+		"SI/SM, 웹에이전시, 교육업계 등 다양한 직군의 회사에서 일한 경험을 바탕으로 어떤 업무도 OK",
 	]
 };
 
@@ -78,6 +74,9 @@ export const careerText = [
 		team: "프론트개발팀",
 		position: "파트장",
 		period: "2017.04 ~ 재직중",
+		skill: [
+			"HTML5", "CSS3", "SCSS", "Vue.js", "Confluence", "Jira", "Adobe Photoshop", "Figma", "Zeplin", "Visual Studio Code", "jQuery", "jQuery UI", "JavaScript",
+		],
 		project: [
 			{
 				projectTitle: "직영학원 PC/MO 메인 개편",
@@ -164,6 +163,9 @@ export const careerText = [
 		team: "UI개발팀",
 		position: "대리",
 		period: "2015.09 ~ 2016.12",
+		skill: [
+			"HTML5", "CSS3", "LESS", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
+		],
 		project: [
 			{
 				projectTitle: "루이까또즈 직영몰 웹사이트 및 모바일 리뉴얼",
@@ -232,6 +234,9 @@ export const careerText = [
 		team: "밴드Web개발캠프",
 		position: "사원",
 		period: "2014.02 ~ 2015.02",
+		skill: [
+			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
+		],
 		project: [
 			{
 				projectTitle: "데스크탑 어플리케이션 UI 개발",
@@ -258,6 +263,9 @@ export const careerText = [
 		team: "e-BIZ 웹퍼블리셔팀",
 		position: "사원",
 		period: "2011.12 ~ 2014.02",
+		skill: [
+			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
+		],
 		project: [
 			{
 				projectTitle: "김포시 통합홈페이지 전면 개편사업",
