@@ -23,23 +23,29 @@
 	section {
 		position: relative;
 		@include vw(margin-top, 80px);
-		.inner {
-			@include vw(padding, 0 40px);
-		}
+		// .inner {
+		// 	@include vw(padding, 0 40px);
+		// }
 		.title-main {
 			position: sticky;
 			top: 0;
-			@include vw(padding, 20px 0);
+			z-index: 1;
+			@include vw(padding, 20px 40px);
+			font-family: var(--mainEng-font);
 			@include vw(font-size, 40px);
-			font-weight: 900;
+			font-weight: 700;
 			text-transform: uppercase;
+			color: rgba($color: #e2e8f0, $alpha: 1.0);
+			background-color: rgba($color: #0f172a, $alpha: 0.75);
+			backdrop-filter: blur(8px);
 			@media (min-width: 1024px) {
 				display: none;
 			}
 		}
 		.title-sub {
 			@include vw(font-size, 36px);
-			font-weight: 600;
+			font-weight: 500;
+			color: rgba($color: #e2e8f0, $alpha: 1.0);
 		}
 	}
 }

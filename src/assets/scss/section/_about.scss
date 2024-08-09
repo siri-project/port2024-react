@@ -18,15 +18,22 @@
 		}
 	}
 	.about-text {
-		@include vw(margin, 20px 0 0);
-		@include vw(font-size, 30px);
+		@include vw(margin, 20px 40px 0);
+		@include vw(font-size, 26px);
 		font-weight: 400;
 		// color: rgba($color: #fff, $alpha: 0.5);
+		color: rgba($color: #94a3b8, $alpha: 0.9);
+		@include breakpoint(maxMobile){
+			font-size: 20px;
+		}
+		strong {
+			color: rgba($color: #e2e8f0, $alpha: 0.9);
+		}
 		p:nth-child(4){
-			@include vw(margin-top, 20px);
+			@include vw(margin-top, 40px);
 		}
 		p:nth-child(9){
-			@include vw(margin-top, 20px);
+			@include vw(margin-top, 40px);
 		}
 	}
 }

@@ -5,17 +5,19 @@
 	.title-main {
 		@include vw(margin, 60px 0 0);
 		@include vw(font-size, 80px);
-		// color: rgba($color: #fff, $alpha: 0.6);
+		font-family: var(--mainEng-font);
+		color: rgba($color: #e2e8f0, $alpha: 1.0);
 	}
 	.title-sub {
 		@include vw(margin, 10px 0 0);
-		@include vw(font-size, 60px);
-		// color: rgba($color: #fff, $alpha: 0.6);
+		@include vw(font-size, 50px);
+		font-family: var(--mainEng-font);
+		color: rgba($color: #e2e8f0, $alpha: 1.0);
 	}
 	.text {
 		@include vw(margin, 30px 0 0);
 		@include vw(font-size, 30px);
-		// color: rgba($color: #fff, $alpha: 0.5);
+		color: rgba($color: #94a3b8, $alpha: 1.0);
 	}
 	.header-nav {
 		display: none;

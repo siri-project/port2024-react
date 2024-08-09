@@ -1,7 +1,7 @@
 :root {
-	--mainEng-font: "Montserrat";
+	--mainEng-font: "roboto";
 	--mainKor-font: "Noto Sans KR", sans-serif;
-	--mainNum-font: "gmarket";
+	--mainNum-font: "roboto";
 
 	--main-color: #0f172a;
 	--sub-color: #e2e8f0;
@@ -19,7 +19,7 @@
 	--black400: #444;
 
 	line-height: 1.5;
-	font-family: var(--mainEng-font), var(--mainKor-font);
+	font-family: var(--mainKor-font);
 	font-size: 16px;
 	font-weight: 400;
 

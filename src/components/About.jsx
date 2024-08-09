@@ -30,18 +30,11 @@ const about = () => {
 					about
 				</div>
 				<div className="about-text">
-					<p>{getHighlightedText(aboutText.title[0])}</p>
-					<p>{getHighlightedText(aboutText.title[1])}</p>
-					<p>{getHighlightedText(aboutText.title[2])}</p>
-					<p>{getHighlightedText(aboutText.title[3])}</p>
-					<p>{getHighlightedText(aboutText.title[4])}</p>
-					<p>{getHighlightedText(aboutText.title[5])}</p>
-					<p>{getHighlightedText(aboutText.title[6])}</p>
-					<p>{getHighlightedText(aboutText.title[7])}</p>
-					<p>{getHighlightedText(aboutText.title[8])}</p>
-					<p>{getHighlightedText(aboutText.title[9])}</p>
-					<p>{getHighlightedText(aboutText.title[10])}</p>
-					<p>{getHighlightedText(aboutText.title[11])}</p>
+					{aboutText.title.map((title, idx) => (
+						<p key={idx}>
+							{getHighlightedText(title)}
+						</p>
+					))}
 				</div>
 			</div>
 		</section>

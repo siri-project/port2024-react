@@ -15,7 +15,7 @@ export const headerNav = [
 
 export const aboutText = {
 	title: [
-		"안녕하세요. UI개발자 장은실입니다. :)",
+		"안녕하세요. UI개발자 장은실입니다 : )",
 		"현재 자사 사이트 운영과 구축 업무를 담당하고 있습니다.",
 		"FE 개발자를 목표로 느리지만 꾸준히 노력하고 있습니다.",
 
@@ -25,10 +25,10 @@ export const aboutText = {
 		"<strong>가이드에 따라 일관된 작업물을 제공</strong>하여 사용자에게 최상의 경험을 제공할 수 있습니다.",
 		"<strong>버전 관리 시스템</strong>을 사용하여 코드 관리 및 협업을 효율적으로 수행할 수 있습니다.",
 		
-		"정리를 잘하고 메모도 꼼꼼하게 하는 편이라 팀 내 문서 작업을 도맡아 했습니다.",
-		"완벽주의 성향으로 작업 시 최선을 다해 높은 품질의 결과물을 제공하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
+		"꼼꼼한 편으로, 팀 내 문서 정리 및 기록을 도맡아 했습니다.",
+		"작업 시 최선을 다해 높은 품질의 결과물을 제공하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
 		"업무 진행 시 발생하는 문제는 독단적으로 해결하기 보다, 관련 작업자들과 소통하여 최선의 방법으로 해결합니다.",
-		"SI/SM, 웹에이전시, 교육업계 등 다양한 직군의 회사에서 일한 경험을 바탕으로 어떤 업무도 OK",
+		"SI/SM, 웹에이전시, 교육업계 등 다양한 직군의 회사에서 일한 경험을 바탕으로 어떤 업무도 대응 가능합니다.",
 	]
 };
 
@@ -74,6 +74,7 @@ export const careerText = [
 		team: "프론트개발팀",
 		position: "파트장",
 		period: "2017.04 ~ 재직중",
+		link: "//www.eduwill.net",
 		skill: [
 			"HTML5", "CSS3", "SCSS", "Vue.js", "Confluence", "Jira", "Adobe Photoshop", "Figma", "Zeplin", "Visual Studio Code", "jQuery", "jQuery UI", "JavaScript",
 		],
@@ -163,6 +164,7 @@ export const careerText = [
 		team: "UI개발팀",
 		position: "대리",
 		period: "2015.09 ~ 2016.12",
+		link: "//www.epasscni.com",
 		skill: [
 			"HTML5", "CSS3", "LESS", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
 		],
@@ -235,7 +237,7 @@ export const careerText = [
 		position: "사원",
 		period: "2014.02 ~ 2015.02",
 		skill: [
-			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
+			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript", "SVN"
 		],
 		project: [
 			{
@@ -263,6 +265,7 @@ export const careerText = [
 		team: "e-BIZ 웹퍼블리셔팀",
 		position: "사원",
 		period: "2011.12 ~ 2014.02",
+		link: "http://www.funnywork.co.kr/",
 		skill: [
 			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
 		],

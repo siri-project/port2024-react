@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import Intro from "../components/About";
 import About from "../components/About";
 import Career from "../components/Career";
 import Port from "../components/Port";

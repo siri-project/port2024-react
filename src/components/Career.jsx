@@ -13,7 +13,15 @@ const Career = () => {
 					{careerText.map((career, key) => (
 						<article className={`career-item career-${key+1}`} key={key}>
 							<p className="period">{career.period}</p>
-							<h3 className="title-sub">{career.title}</h3>
+							<h3 className="title-sub">
+								{ career.link ? (
+									<a href={career.link} target="_blank" className="link">
+										{career.title}
+									</a>
+								) : (
+									<span>{career.title}</span>
+								)}
+							</h3>
 							<p className="info">
 								<span className="team">{career.team}</span>/
 								<span className="position">{career.position}</span>
