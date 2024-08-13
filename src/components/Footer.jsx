@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
 	return (
 		<footer id="footer" role="contentinfo">
-			<div className="inner">
-				<div className="footer-right">
+			<div className="footer-inner">
+				<div className="copy">
 					&copy; 2024 made by eunsil jang<br />
 					이 사이트는 리액트를 이용하여 제작되었으며,<br />
 					개인 포트폴리오 사이트입니다.

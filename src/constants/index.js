@@ -1,3 +1,11 @@
+import imgAcademy from '../assets/img/academy.jpg';
+import imgLecture from '../assets/img/lecture.jpg';
+import imgBook from '../assets/img/book.jpg';
+import imgProf from '../assets/img/prof.png';
+import imgLife from '../assets/img/life.jpg';
+import imgPuri from '../assets/img/puri.jpg';
+import imgCsr from '../assets/img/csr.jpg';
+
 export const headerNav = [
 	{
 		title: "about",
@@ -76,12 +84,12 @@ export const careerText = [
 		period: "2017.04 ~ 재직중",
 		link: "//www.eduwill.net",
 		skill: [
-			"HTML5", "CSS3", "SCSS", "Vue.js", "Confluence", "Jira", "Adobe Photoshop", "Figma", "Zeplin", "Visual Studio Code", "jQuery", "jQuery UI", "JavaScript",
+			"HTML5", "CSS3", "SCSS", "Vue.js", "jQuery", "jQuery UI", "JavaScript", "Jira", "Confluence", "Figma", "Zeplin", "Adobe Photoshop", "Git", "GiHub", "Gitlab", "Visual Studio Code",
 		],
 		project: [
 			{
 				projectTitle: "직영학원 PC/MO 메인 개편",
-				projectPeriod: "2024.04 ~ ",
+				projectPeriod: "2024.03 ~ 2024.06",
 				projectContribution: "50%",
 				projectLink: "https://nrg.eduwill.net/sites/home",
 			},
@@ -330,57 +338,73 @@ export const careerText = [
 
 export const portText = [
 	{
-		num: "01",
+		title: "직영학원 PC/MO 메인 개편 프로젝트",
+		desc: "업무 효율화 목적으로 이미지형 배너 디자인 영역 및 하드코딩 개발 영역을 최소화하여 작업 단계를 대폭 축소하여, 학원에서 사이트 자체 운영을 목적으로 개편한 프로젝트입니다.",
+		skill: [ "Vue.js", "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		img: imgAcademy,
+		contribution: "50%",
+		link: "https://gov.eduwill.net/sites/DanCourse",
+	},
+	{
 		title: "9급 공무원 단과 판매관리 구축 프로젝트",
 		desc: "2023 하반기 공무원 매출 증대 방안의 일환으로 단과 상품 판매를 위한 인덱스 페이지 및 관리자 페이지 구축 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/common/web/images/gnb/og_logo.png",
-		view: "https://gov.eduwill.net/sites/DanCourse",
+		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		img: imgLecture,
+		contribution: "100%",
+		link: "https://gov.eduwill.net/sites/DanCourse",
 	},
 	{
-		num: "02",
-		title: "9/7급 공무원 교재관리 개선 및 교재소개 페이지 리뉴얼 프로젝트",
+		title: "교재소개 페이지 리뉴얼 프로젝트",
 		desc: "교재소개 페이지의 사용자 편의성을 강화하고 교재 관리 백엔드를 개선하여 운영자의 업무 효율성을 향상시키는 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/common/web/images/gnb/og_logo.png",
-		view: "https://gov.eduwill.net/sites/book",
+		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		img: imgBook,
+		contribution: "100%",
+		link: "https://gov.eduwill.net/sites/book",
 	},
 	{
-		num: "03",
 		title: "공무원 교수소개 상세 개편 프로젝트",
 		desc: "강사 홍보, 개별 상품 판매 및 강사 상세 정보 제공을 목적으로 UI를 개선한 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/common/web/images/gnb/og_logo.png",
-		view: "https://gov.eduwill.net/Prof/KO33/KO",
+		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Zeplin" ],
+		img: imgProf,
+		contribution: "50%",
+		link: "https://gov.eduwill.net/Prof/KO33/KO",
 	},
 	{
-		num: "04",
 		title: "합격생활 사이트 구축 프로젝트",
 		desc: "온라인 학습 관리 서비스의 기능과 사용자 경험을 고도화하고, 독한에듀윌 2.0 서비스의 문제점을 개선한 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/life/live/images/banner/OG_190626.jpg",
-		view: "https://life.eduwill.net/intro",
+		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Zeplin" ],
+		img: imgLife,
+		contribution: "100%",
+		link: "https://life.eduwill.net/intro",
 	},
 	{
-		num: "05",
 		title: "문풀훈련소 사이트 구축 프로젝트",
 		desc: "학습 관리 서비스를 통합하여 모의고사와 3분 영어 퀴즈 등 다양한 에듀윌 문제 관리 시스템을 구축하는 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/qs/live/images/kakao_banner.jpg",
-		view: "https://puri.eduwill.net/qs/gate",
+		skill: [ "HTML5", "CSS", "jQuery", "javascript", "Photoshop" ],
+		img: imgPuri,
+		contribution: "100%",
+		link: "https://puri.eduwill.net/qs/gate",
 	},
 	{
-		num: "06",
 		title: "사회공헌위원회 사이트 구축 프로젝트",
 		desc: "회사의 사회공헌활동을 보다 효과적으로 홍보하고 공유하기 위한 신규 웹 사이트를 구축하는 프로젝트입니다.",
-		img: "https://img.eduwill.net/resources/common/web/images/gnb/og_logo.png",
-		view: "https://csr.eduwill.net",
+		skill: [
+			"HTML5", "CSS", "jQuery", "javascript", "Photoshop"
+		],
+		img: imgCsr,
+		contribution: "100%",
+		link: "https://csr.eduwill.net",
 	},
 ];
 
 export const contactText = [
 	{
 		link: "mailto:wdt0134@gmail.com",
-		title: "mail"
+		title: "mail",
 	},
 	// {
 	// 	link: "https://open.kakao.com/o/sFPNcOmg" ,
-	// 	title: "kakao"
+	// 	title: "kakao",
 	// },
 	// {
 	// 	link: "https://line.me/ti/p/RVWCnGJVlM" ,
@@ -388,6 +412,6 @@ export const contactText = [
 	// },
 	// {
 	// 	link: "tel:010-8644-4534",
-	// 	title: "phone"
+	// 	title: "phone",
 	// },
 ];

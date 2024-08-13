@@ -1,10 +1,18 @@
 #career {
-	.career-view {
+	.career-wrap {
 		@include vw(padding, 0 40px);
+		// padding: 0 20px;
+		// @include breakpoint(maxMobile) {
+		// 	padding: 0 40px;
+		// }
 	}
 	.career-item {
 		& + .career-item {
 			@include vw(margin-top, 40px);
+			// margin-top: 20px;
+			// @include breakpoint(maxMobile) {
+			// 	margin-top: 40px;
+			// }
 		}
 		.period {
 			display: block;
@@ -13,46 +21,35 @@
 			font-weight: 500;
 			color: rgba($color: #64748b, $alpha: 0.8);
 			// color: rgba($color: #fff, $alpha: 0.5);
+			// @include breakpoint(maxMobile) {
+			// 	font-size: 20px;
+			// }
+			@media (min-width: 1200px) {
+				font-size: 16px;
+			}
 		}
 		.title-sub {
 			@include vw(margin-top, 10px);
-			@include vw(font-size, 32px);
+			@include vw(font-size, 30px);
+			// @include breakpoint(maxMobile) {
+			// 	font-size: 30px;
+			// }
+			@media (min-width: 1200px) {
+				font-size: 18px;
+			}
 		}
 		.link {
 			position: relative;
 			display: inline-block;
-			@include vw(padding-right, 40px);
 			line-height: 1;
-			&::before,
-			&::after {
-				content: '';
-				position: absolute;
-			}
-			&::before {
-				@include vw(top, 10px);
-				right: 0;
-				@include vw(right, -1px);
-				@include vw(width, 14px);
-				@include vw(height, 14px);
-				border-top: solid 1px currentColor;
-				border-right: solid 1px currentColor;
-				transform: rotate(20deg);
-			}
-			&::after {
-				right: 0;
-				@include vw(top, 8px);
-				@include vw(width, 25px);
-				@include vw(height, 1px);
-				@include vw(margin-left, 2px);
-				@include vw(margin-top, 12px);
-				background-color: currentColor;
-				transform: rotate(-30deg);
-			}
 		}
 		.info {
-			@include vw(font-size, 30px);
+			@include vw(font-size, 28px);
 			font-weight: 500;
 			color: rgba($color: #64748b, $alpha: 0.8);
+			@media (min-width: 1200px) {
+				font-size: 16px;
+			}
 		}
 	}
 	.skill-list {
@@ -64,12 +61,16 @@
 		li {
 			display: inline-block;
 			@include vw(margin, 5px);
-			@include vw(padding, 10px);
+			@include vw(padding, 10px 20px);
 			line-height: 1;
-			@include vw(font-size, 28px);
+			@include vw(font-size, 24px);
 			color: #5eead4;
 			border-radius: 20px;
 			background-color: rgba($color: #2dd4bf, $alpha: 0.1);
+			@media (min-width: 1200px) {
+				padding: 5px 10px;
+				font-size: 16px;
+			}
 		}
 	}
 }

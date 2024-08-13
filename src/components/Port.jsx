@@ -46,14 +46,25 @@ const Port = () => {
 					{portText.map((port, key) => (
 						<article className={`port-item p${key + 1}`} key={key}>
 							{/* ref={(el) => (sectionsRef.current[key] = el)} */}
-							<span className="num">{port.num}.</span>
-							<a href={port.view} className="img" target="_blank" rel="noreferrer">
-								<img src={port.img} alt={port.title} />
-							</a>
-							<h3 className="title">{port.title}</h3>
-							<p className="desc">{port.desc}</p>
-							<a href={port.view} className="site" target="_blank" rel="noreferrer">
-								사이트 보기
+							{/* <span className="num">{key + 1}</span> */}
+							<a href={port.link} className="img" target="_blank" rel="noreferrer">
+								<p className="thumb">
+									<img src={port.img} alt={port.title} />
+								</p>
+
+								<h3 className="title-sub">{port.title}</h3>
+								<ul className="info-list">
+									<li className="desc">{port.desc}</li>
+									<li className="contribution">프로젝트 기여도 : {port.contribution}</li>
+								</ul>
+
+								<ul className="skill-list">
+									{port.skill.map((skill, idx) => (
+										<li key={idx}>
+											<span>{skill}</span>
+										</li>
+									))}
+								</ul>
 							</a>
 						</article>
 					))}

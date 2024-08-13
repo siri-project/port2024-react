@@ -9,7 +9,7 @@ const Career = () => {
 				<h2 className="title-main">
 					career
 				</h2>
-				<div className="career-view">
+				<div className="career-wrap">
 					{careerText.map((career, key) => (
 						<article className={`career-item career-${key+1}`} key={key}>
 							<p className="period">{career.period}</p>

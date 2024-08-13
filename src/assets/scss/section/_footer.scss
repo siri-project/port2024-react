@@ -1,13 +1,20 @@
 #footer {
+	float: none;
+	clear: both;
+	width: 100%;
 	.footer-inner {
-		@include vw(padding, 50px);
+		@include vw(padding, 200px 0 100px);
+		// @include rwdWidth(1200px){
+		// 	padding: 100px 0 50px;
+		// }
 	}
-	.footer-right {
-		@include vw(font-size, 30px);
+	.copy {
 		text-align: center;
+		@include vw(font-size, 24px);
+		color: rgba($color: #94a3b8, $alpha: 0.9);
 		text-transform: uppercase;
-		@include rwdWidth(1024px){
-			font-size: 20px;
+		@include rwdWidth(1200px){
+			font-size: 18px;
 		}
 	}
 }

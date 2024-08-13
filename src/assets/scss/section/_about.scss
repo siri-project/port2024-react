@@ -1,15 +1,15 @@
 #about {
 	.about-img {
 		position: absolute;
-		@include vw(top, -200px);
-		@include vw(right, 40px);
+		@include vw(top, 300px);
+		@include vw(left, -300px);
 		display: none;
 		@include vw(width, 200px);
 		@include vw(height, 200px);
 		overflow: hidden;
 		text-align: center;
 		border-radius: 50%;
-		@media (min-width: 1024px) {
+		@media (min-width: 1200px) {
 			display: block;
 		}
 		& > img {
@@ -23,8 +23,8 @@
 		font-weight: 400;
 		// color: rgba($color: #fff, $alpha: 0.5);
 		color: rgba($color: #94a3b8, $alpha: 0.9);
-		@include breakpoint(maxMobile){
-			font-size: 20px;
+		@media (min-width: 1200px) {
+			font-size: 16px;
 		}
 		strong {
 			color: rgba($color: #e2e8f0, $alpha: 0.9);

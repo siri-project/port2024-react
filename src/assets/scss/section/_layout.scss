@@ -15,10 +15,13 @@
 
 #root {
 	position: relative;
-	@media (min-width: 1024px) {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
+	@extend %clearfix;
+	@media (min-width: 1200px) {
+		// display: flex;
+		// align-items: flex-start;
+		// justify-content: space-between;
+		width: 1200px;
+		margin: 0 auto;
 	}
 	section {
 		position: relative;
@@ -47,5 +50,12 @@
 			font-weight: 500;
 			color: rgba($color: #e2e8f0, $alpha: 1.0);
 		}
+	}
+}
+
+#main {
+	@media (min-width: 1200px) {
+		float: right;
+		width:  70%;
 	}
 }
