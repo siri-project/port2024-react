@@ -11,15 +11,13 @@ import Main from "../components/Main";
 const HomeView = () => {
 	return (
 		<>
-			{/* <Skip /> */}
 			<Header />
 			<Main>
 				<About />
 				<Career />
 				<Port />
-				{/* <Contact /> */}
+				<Footer />
 			</Main>
-			<Footer />
 		</>
 	);
 };

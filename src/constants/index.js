@@ -32,11 +32,11 @@ export const aboutText = {
 		"<strong>동적인 웹 요소와 모션 그래픽을 활용</strong>하여 사용자의 관심을 끌고 몰입도를 높이는 작업을 수행할 수 있습니다.",
 		"<strong>가이드에 따라 일관된 작업물을 제공</strong>하여 사용자에게 최상의 경험을 제공할 수 있습니다.",
 		"<strong>버전 관리 시스템</strong>을 사용하여 코드 관리 및 협업을 효율적으로 수행할 수 있습니다.",
-		
-		"꼼꼼한 편으로, 팀 내 문서 정리 및 기록을 도맡아 했습니다.",
-		"작업 시 최선을 다해 높은 품질의 결과물을 제공하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
-		"업무 진행 시 발생하는 문제는 독단적으로 해결하기 보다, 관련 작업자들과 소통하여 최선의 방법으로 해결합니다.",
-		"SI/SM, 웹에이전시, 교육업계 등 다양한 직군의 회사에서 일한 경험을 바탕으로 어떤 업무도 대응 가능합니다.",
+
+		"저는 정리를 잘하는 편으로, 팀 내 문서 작업을 주로 담당했습니다.",
+		"<strong>작업 시 최선을 다해 높은 품질의 결과물을 제공</strong>하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
+		"업무 진행 시 발생하는 문제는 독단적으로 해결하기 보다, 관련 <strong>작업자들과 소통하여 최선의 방법으로 해결</strong>합니다.",
+		"SI/SM, 에이전시, 교육업계 등 <strong>다양한 직군의 회사에서 일한 경험</strong>을 바탕으로 어떤 업무도 대응 가능합니다.",
 	]
 };
 
@@ -100,7 +100,7 @@ export const careerText = [
 				projectLink: "https://gov.eduwill.net/sites/DanCourse",
 			},
 			{
-				projectTitle: "9/7급 공무원 교재관리 개선 및 교재소개 페이지 리뉴얼 프로젝트",
+				projectTitle: "교재소개 페이지 리뉴얼 프로젝트",
 				projectPeriod: "2022.12 ~ 2023.03",
 				projectContribution: "100%",
 				projectLink: "https://gov.eduwill.net/sites/book",
@@ -145,7 +145,6 @@ export const careerText = [
 				projectTitle: "독한합격앱(웹뷰) 통합 프로젝트",
 				projectPeriod: "2017.07 ~ 2018.01",
 				projectContribution: "100%",
-				projectLink: "현재 앱 종료",
 			},
 			{
 				projectTitle: "AC(Assessment Center) 사이트 구축 프로젝트",
@@ -339,60 +338,93 @@ export const careerText = [
 export const portText = [
 	{
 		title: "직영학원 PC/MO 메인 개편 프로젝트",
-		desc: "업무 효율화 목적으로 이미지형 배너 디자인 영역 및 하드코딩 개발 영역을 최소화하여 작업 단계를 대폭 축소하여, 학원에서 사이트 자체 운영을 목적으로 개편한 프로젝트입니다.",
-		skill: [ "Vue.js", "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		desc: [
+			"업무 효율화 목적으로 이미지형 배너 디자인 영역 및 하드코딩 개발 영역을 최소화하여 작업 단계를 대폭 축소하여, 학원에서 사이트 자체 운영을 목적으로 개편한 프로젝트입니다.",
+			"작업 기간 : 2024.03 ~ 2024.06",
+			"작업 기여도 : 50% ( PC 메인 개편 담당)"
+		],
+		skill: [
+			"HTML5", "SCSS", "Vue.js", "jQuery", "javascript", "Git", "Figma"
+		],
 		img: imgAcademy,
-		contribution: "50%",
 		link: "https://gov.eduwill.net/sites/DanCourse",
 	},
 	{
 		title: "9급 공무원 단과 판매관리 구축 프로젝트",
-		desc: "2023 하반기 공무원 매출 증대 방안의 일환으로 단과 상품 판매를 위한 인덱스 페이지 및 관리자 페이지 구축 프로젝트입니다.",
-		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		desc: [
+			"2023 하반기 공무원 매출 증대 방안의 일환으로 단과 상품 판매를 위한 인덱스 페이지 및 관리자 페이지 구축 프로젝트입니다.",
+			"작업 기간 : 2023.06 ~ 2023.08",
+			"작업 기여도 : 100% ( PC/MO )"
+		],
+		skill: [
+			"HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma"
+		],
 		img: imgLecture,
-		contribution: "100%",
 		link: "https://gov.eduwill.net/sites/DanCourse",
 	},
 	{
 		title: "교재소개 페이지 리뉴얼 프로젝트",
-		desc: "교재소개 페이지의 사용자 편의성을 강화하고 교재 관리 백엔드를 개선하여 운영자의 업무 효율성을 향상시키는 프로젝트입니다.",
-		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma" ],
+		desc: [
+			"교재소개 페이지의 사용자 편의성을 강화하고 교재 관리 백엔드를 개선하여 운영자의 업무 효율성을 향상시키는 프로젝트입니다.",
+			"작업 기간 : 2022.12 ~ 2023.03",
+			"작업 기여도 : 100% ( PC/MO )"
+		],
+		skill: [
+			"HTML5", "SCSS", "jQuery", "javascript", "Git", "Figma"
+		],
 		img: imgBook,
-		contribution: "100%",
 		link: "https://gov.eduwill.net/sites/book",
 	},
 	{
 		title: "공무원 교수소개 상세 개편 프로젝트",
-		desc: "강사 홍보, 개별 상품 판매 및 강사 상세 정보 제공을 목적으로 UI를 개선한 프로젝트입니다.",
-		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Git", "Zeplin" ],
+		desc: [
+			"강사 홍보, 개별 상품 판매 및 강사 상세 정보 제공을 목적으로 UI를 개선한 프로젝트입니다.",
+			"작업 기간 : 2021.03 ~ 2021.08",
+			"작업 기여도 : 70% ( PC/MO 전체 레이아웃 및 하단 콘텐츠 담당)"
+		],
+		skill: [
+			"HTML5", "SCSS", "jQuery", "javascript", "Git", "Zeplin"
+		],
 		img: imgProf,
-		contribution: "50%",
 		link: "https://gov.eduwill.net/Prof/KO33/KO",
 	},
 	{
 		title: "합격생활 사이트 구축 프로젝트",
-		desc: "온라인 학습 관리 서비스의 기능과 사용자 경험을 고도화하고, 독한에듀윌 2.0 서비스의 문제점을 개선한 프로젝트입니다.",
-		skill: [ "HTML5", "SCSS", "jQuery", "javascript", "Zeplin" ],
+		desc: [
+			"온라인 학습 관리 서비스의 기능과 사용자 경험을 고도화하고, 독한에듀윌 2.0 서비스의 문제점을 개선한 프로젝트입니다.",
+			"작업 기간 : 2019.01 ~ 2019.07",
+			"작업 기여도 : 100% ( PC/MO )"
+		],
+		skill: [
+			"HTML5", "SCSS", "jQuery", "javascript", "Zeplin"
+		],
 		img: imgLife,
-		contribution: "100%",
 		link: "https://life.eduwill.net/intro",
 	},
 	{
 		title: "문풀훈련소 사이트 구축 프로젝트",
-		desc: "학습 관리 서비스를 통합하여 모의고사와 3분 영어 퀴즈 등 다양한 에듀윌 문제 관리 시스템을 구축하는 프로젝트입니다.",
-		skill: [ "HTML5", "CSS", "jQuery", "javascript", "Photoshop" ],
+		desc: [
+			"학습 관리 서비스를 통합하여 모의고사와 3분 영어 퀴즈 등 다양한 에듀윌 문제 관리 시스템을 구축하는 프로젝트입니다.",
+			"작업 기간 : 2017.11 ~ 2018.03",
+			"작업 기여도 : 100% ( PC/MO, 22년도 메인 리뉴얼)"
+		],
+		skill: [
+			"HTML5", "CSS", "jQuery", "javascript", "Photoshop"
+		],
 		img: imgPuri,
-		contribution: "100%",
 		link: "https://puri.eduwill.net/qs/gate",
 	},
 	{
 		title: "사회공헌위원회 사이트 구축 프로젝트",
-		desc: "회사의 사회공헌활동을 보다 효과적으로 홍보하고 공유하기 위한 신규 웹 사이트를 구축하는 프로젝트입니다.",
+		desc: [
+			"회사의 사회공헌활동을 보다 효과적으로 홍보하고 공유하기 위한 신규 웹 사이트를 구축하는 프로젝트입니다.",
+			"작업 기간 : 2017.07 ~ 2017.08",
+			"작업 기여도 : 100% ( PC/MO, 22년도 메인 리뉴얼)"
+		],
 		skill: [
 			"HTML5", "CSS", "jQuery", "javascript", "Photoshop"
 		],
 		img: imgCsr,
-		contribution: "100%",
 		link: "https://csr.eduwill.net",
 	},
 ];
@@ -402,16 +434,8 @@ export const contactText = [
 		link: "mailto:wdt0134@gmail.com",
 		title: "mail",
 	},
-	// {
-	// 	link: "https://open.kakao.com/o/sFPNcOmg" ,
-	// 	title: "kakao",
-	// },
-	// {
-	// 	link: "https://line.me/ti/p/RVWCnGJVlM" ,
-	// 	title: "line"
-	// },
-	// {
-	// 	link: "tel:010-8644-4534",
-	// 	title: "phone",
-	// },
+	{
+		link: "tel:010-8644-4534",
+		title: "phone",
+	},
 ];

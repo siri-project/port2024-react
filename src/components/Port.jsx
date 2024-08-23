@@ -53,14 +53,17 @@ const Port = () => {
 								</p>
 
 								<h3 className="title-sub">{port.title}</h3>
-								<ul className="info-list">
-									<li className="desc">{port.desc}</li>
-									<li className="contribution">프로젝트 기여도 : {port.contribution}</li>
+								<ul className="text-list">
+									{port.desc.map((desc, idxD) => (
+										<li key={idxD}>
+											{desc}
+										</li>
+									))}
 								</ul>
 
 								<ul className="skill-list">
-									{port.skill.map((skill, idx) => (
-										<li key={idx}>
+									{port.skill.map((skill, idxS) => (
+										<li key={idxS}>
 											<span>{skill}</span>
 										</li>
 									))}

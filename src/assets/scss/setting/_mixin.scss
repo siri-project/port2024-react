@@ -158,45 +158,6 @@
 	}
 }
 
-// arrow
-// @include arrow(left, 8px, 8px, 2px, $color-base-dark);
-@mixin arrow($direction, $width, $height, $borderWidth, $color) {
-	& {
-		position: relative;
-		display: inline-block;
-	}
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		display: block;
-		@include vw(width, $width);
-		@include vw(height, $height);
-		@include vw(margin-top, -($width/2));
-		border-width: 0;
-		border-style: solid;
-		border-color: $color;
-		@include rotate(45deg);
-
-		@if $direction == 'right' {
-			@include vw(right, $width*2);
-			border-top-width: $borderWidth;
-			border-right-width: $borderWidth;
-		} @else if $direction == 'left' {
-			@include vw(left, $width*2);
-			border-bottom-width: $borderWidth;
-			border-left-width: $borderWidth;
-		} @else if $direction == 'bottom' {
-			border-bottom-width: $borderWidth;
-			border-right-width: $borderWidth;
-		} @else if $direction == 'top' {
-			border-top-width: $borderWidth;
-			border-left-width: $borderWidth;
-		}
-	}
-}
-
 // rem
 // @include rem(margin, 25px 20px 0);
 // https://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/

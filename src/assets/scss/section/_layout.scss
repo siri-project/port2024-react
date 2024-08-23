@@ -17,9 +17,9 @@
 	position: relative;
 	@extend %clearfix;
 	@media (min-width: 1200px) {
-		// display: flex;
-		// align-items: flex-start;
-		// justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		width: 1200px;
 		margin: 0 auto;
 	}
@@ -55,7 +55,119 @@
 
 #main {
 	@media (min-width: 1200px) {
-		float: right;
-		width:  70%;
+		// float: right;
+		width: 60%;
+	}
+}
+
+#header {
+	position: relative;
+	@media (min-width: 1200px) {
+		position: sticky;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		// float: left;
+		width: 40%;
+		height: 100vh;
+	}
+	.inner {
+		@include vw(padding, 0 40px);
+		@media (min-width: 1200px) {
+			padding: 0;
+		}
+	}
+	.title-main {
+		@include vw(margin, 60px 0 0);
+		@include vw(font-size, 80px);
+		font-family: var(--mainEng-font);
+		color: rgba($color: #e2e8f0, $alpha: 1.0);
+		@media (min-width: 1200px) {
+			font-size: 60px;
+		}
+	}
+	.title-sub {
+		@include vw(margin, 10px 0 0);
+		@include vw(font-size, 50px);
+		font-family: var(--mainEng-font);
+		color: rgba($color: #e2e8f0, $alpha: 1.0);
+		@media (min-width: 1200px) {
+			font-size: 40px;
+		}
+	}
+	.text {
+		@include vw(margin, 30px 0 0);
+		@include vw(font-size, 30px);
+		color: rgba($color: #94a3b8, $alpha: 1.0);
+		@media (min-width: 1200px) {
+			font-size: 20px;
+		}
+	}
+	.header-nav {
+		display: none;
+		@media (min-width: 1200px) {
+			display: block;
+		}
+		ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 110;
+			display: block;
+			// @include vw(min-width, 100px);
+			@include vw(padding, 20px 0);
+			// backdrop-filter: blur(15px);
+			li {
+				display: block;
+				text-align: left;
+				a {
+					display: block;
+					@include vw(padding, 10px);
+				}
+			}
+		}
+		li {
+			display: inline-block;
+			a {
+				position: relative;
+				@include vw(padding, 15px);
+				@include vw(font-size, 16px);
+				text-transform: uppercase;
+				&::before {
+					content: '';
+					position: absolute;
+					@include vw(left, 15px);
+					@include vw(bottom, 15px);
+					width: calc(100% - 28px);
+					height: 1px;
+					background-color: #000;
+					@include scaleX(0);
+					@include transition(all, 0.3s);
+				}
+				&:hover::before {
+					@include scaleX(1);
+				}
+			}
+		}
+	}
+}
+
+#footer {
+	float: none;
+	clear: both;
+	width: 100%;
+	.footer-inner {
+		@include vw(padding, 200px 0 100px);
+	}
+	.copy {
+		text-align: center;
+		@include vw(font-size, 24px);
+		color: rgba($color: #94a3b8, $alpha: 0.9);
+		text-transform: uppercase;
+		@include rwdWidth(1200px){
+			text-align: right;
+			font-size: 14px;
+			opacity: 0.5;
+		}
 	}
 }
