@@ -1,39 +1,88 @@
 #about {
 	.about-img {
-		position: absolute;
-		@include vw(top, 300px);
-		@include vw(left, -300px);
 		display: none;
-		@include vw(width, 200px);
-		@include vw(height, 200px);
-		overflow: hidden;
-		text-align: center;
-		border-radius: 50%;
-		@media (min-width: 1200px) {
+		@include breakpoint(minDesktop) {
+			position: absolute;
+			top: -100px;
+			right: 50px;
+			z-index: 10;
 			display: block;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			text-align: center;
+			border-radius: 50%;
+			@include animation(imgEffect, 1s, $timing: cubic-bezier(0.5, 0.2, 0.3, 1.0)) {
+				0% {
+					opacity: 0;
+					-webkit-transform: scaleX(1);
+					transform: scaleX(1);
+				}
+			
+				30% {
+					-webkit-transform: scale3d(1.25, 0.75, 1);
+					transform: scale3d(1.25, 0.75, 1);
+				}
+			
+				40% {
+					-webkit-transform: scale3d(0.75, 1.25, 1);
+					transform: scale3d(0.75, 1.25, 1);
+				}
+			
+				50% {
+					-webkit-transform: scale3d(1.15, 0.85, 1);
+					transform: scale3d(1.15, 0.85, 1);
+				}
+			
+				65% {
+					-webkit-transform: scale3d(0.95, 1.05, 1);
+					transform: scale3d(0.95, 1.05, 1);
+				}
+			
+				75% {
+					-webkit-transform: scale3d(1.05, 0.95, 1);
+					transform: scale3d(1.05, 0.95, 1);
+				}
+			
+				to {
+					opacity: 1;
+					-webkit-transform: scaleX(1);
+					transform: scaleX(1);
+				}
+			}
+		}
+		@include breakpoint(desktop) {
+			top: 60px;
+			right: 48px;
+			width: 100px;
+			height: 100px;
 		}
 		& > img {
 			width: 100%;
 			height: 100%;
 		}
 	}
-	.about-text {
-		@include vw(margin, 20px 40px 0);
-		@include vw(font-size, 26px);
+	.about-wrap {
+		margin: 0 24px;
+		@include breakpoint(desktop) {
+			margin: 0 48px;
+		}
+	}
+	.about-item {
+		font-size: 13px;
 		font-weight: 400;
-		// color: rgba($color: #fff, $alpha: 0.5);
 		color: rgba($color: #94a3b8, $alpha: 0.9);
-		@media (min-width: 1200px) {
+		@include breakpoint(maxMobile) {
+			font-size: 14px;
+		}
+		@include breakpoint(desktop) {
 			font-size: 16px;
+		}
+		& + .about-item {
+			margin-top: 40px;
 		}
 		strong {
 			color: rgba($color: #e2e8f0, $alpha: 0.9);
-		}
-		p:nth-child(4) {
-			@include vw(margin-top, 40px);
-		}
-		p:nth-child(9) {
-			@include vw(margin-top, 40px);
 		}
 	}
 }

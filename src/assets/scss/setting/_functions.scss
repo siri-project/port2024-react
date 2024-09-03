@@ -21,6 +21,15 @@
 	@return percentage($target / $parent);
 }
 
+// svg
+@function icon($iconName, $color: fff) {
+	$iconList: (
+		arrow: "%3Csvg fill='%23#{$color}' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg data-name='Layer 2'%3E%3Cg data-name='diagonal-arrow-right-up'%3E%3Crect width='50' height='50' transform='rotate(180 12 12)' opacity='0'%3E%3C/rect%3E%3Cpath d='M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+	);
+	$icon: map-get($iconList, $iconName);
+	@return url("data:image/svg+xml;charset=utf8,#{$icon}");
+}
+
 // width: columns(); 1/12 
 // width: columns(6); 6/12
 // width: columns(12); 12/12

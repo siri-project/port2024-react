@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import careerPdf from "../assets/pdf/EunsilJang_resume.pdf";
 import { careerText } from "../constants";
 
 const Career = () => {
@@ -12,39 +13,30 @@ const Career = () => {
 				<div className="career-wrap">
 					{careerText.map((career, key) => (
 						<article className={`career-item career-${key+1}`} key={key}>
-							<p className="period">{career.period}</p>
-							<h3 className="title-sub">
-								{ career.link ? (
-									<a href={career.link} target="_blank" className="link">
-										{career.title}
-									</a>
-								) : (
-									<span>{career.title}</span>
-								)}
-							</h3>
-							<p className="info">
-								<span className="team">{career.team}</span>/
-								<span className="position">{career.position}</span>
-							</p>
+							<a href={career.url} className={ career.url ? '' : 'disabled' } target="_blank" rel="noreferrer">
+								<p className="period">{career.period}</p>
+								<h3 className="title-sub">
+									<span className="link">{career.title}</span>
+								</h3>
+								<p className="info">
+									<span className="team">{career.team}</span>/
+									<span className="position">{career.position}</span>
+								</p>
 
-							<ul className="skill-list">
-								{career.skill.map((skill, idx) => (
-									<li key={idx}>
-										<span>{skill}</span>
-									</li>
-								))}
-							</ul>
-							{/* <div className="career-text">
-								<ul className="career-list">
-									{career.project.map((project, idx) => (
+								<ul className="stack-list">
+									{career.stack.map((stack, idx) => (
 										<li key={idx}>
-											<strong>{project.projectTitle}</strong> <span>( {project.projectPeriod} )</span>
+											<span>{stack}</span>
 										</li>
 									))}
 								</ul>
-							</div> */}
+							</a>
 						</article>
 					))}
+				</div>
+
+				<div className="career-action">
+					<a href={careerPdf} target="_blank" className="link">전체 이력서 보기</a>
 				</div>
 			</div>
 		</section>

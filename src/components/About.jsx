@@ -29,11 +29,17 @@ const about = () => {
 				<div className="title-main">
 					about
 				</div>
-				<div className="about-text">
-					{aboutText.title.map((title, idx) => (
-						<p key={idx}>
-							{getHighlightedText(title)}
-						</p>
+				<div className="about-wrap">
+					{aboutText.map((about, key) => (
+						<article className={`about-item a${key + 1}`} key={key}>
+							<ul className="text-list">
+								{about.desc.map((desc, idxD) => (
+									<li key={idxD}>
+										{getHighlightedText(desc)}
+									</li>
+								))}
+							</ul>
+						</article>
 					))}
 				</div>
 			</div>

@@ -1,71 +1,112 @@
 #port {
 	.port-wrap {
-		@include vw(padding, 0 40px);
+		padding: 0 24px;
 	}
 	.port-item {
 		position: relative;
 		color: rgba($color: #64748b, $alpha: 0.8);
-		& + .port-item {
-			@include vw(margin-top, 40px);
-		}
-		@media (min-width: 1200px) {
-			padding-left: 180px;
+		@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+		@include breakpoint(minDesktop) {
+			padding: 20px 20px 20px 160px;
 			&:hover {
-				.thumb {
-					img {
-						@include scaleXY(1.05, 1.05);
+				border-radius: 6px;
+				background-color: rgba(30,41,59,.5);
+				@include boxShadow(inset 0 1px 0 0 rgba(148,163,184,.1));
+				.link {
+					color: #5eead4;
+					&::before {
+						top: -4px;
+						right: -4px;
+						background-image: icon(arrow, '5eead4');
 					}
 				}
+				.thumb {
+					border-color: rgba($color: #5eead4, $alpha: 0.8);
+				}
 			}
+		}
+		@include breakpoint(desktop) {
+			padding-left: 180px;
+		}
+		& + .port-item {
+			margin-top: 40px;
 		}
 		.thumb {
 			position: relative;
 			display: block;
-			@include vw(height, 300px);
+			height: 150px;
 			overflow: hidden;
-			@include vw(border-radius, 10px);
+			border-radius: 8px;
+			border: 3px solid rgba($color: #64748b, $alpha: 0.5);
+			@include boxSizing(border-box);
 			@include transition(all, 0.3s);
-			@media (min-width: 1200px) {
+			@include breakpoint(minDesktop) {
 				position: absolute;
-				top: 0;
+				top: 24px;
 				left: 0;
-				width: 150px;
-				height: 100px;
+				width: 130px;
+				height: 90px;
 			}
-			&:before {
-				content: '';
+			@include breakpoint(desktop) {
+				left: 20px;
+			}
+			&::before {
+				// content: '';
 				position: absolute;
 				right: 0;
 				bottom: 0;
 				left: 0;
 				z-index: 1;
 				width: 100%;
-				height: 50%;
-				@include vw(border-radius, 10px);
-				@include linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+				height: 100%;
+				border-radius: 8px;
+				border: 2px solid #64748b;
+				// @include linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+				@include boxSizing(border-box);
 			}
 			img {
 				width: 100%;
-				@include transition(all, 0.3s);
 			}
 		}
 		.title-sub {
-			@include vw(margin-top, 20px);
-			// text-align: center;
-			@include vw(font-size, 30px);
-			// font-weight: 700;
-			// @include vw(border-bottom-width, 2px);
-			// border-bottom-style: solid;
-			// border-bottom-color: currentColor;
-			@media (min-width: 1200px) {
+			margin-top: 10px;
+			font-size: 16px;
+			@include breakpoint(minDesktop) {
+				margin-top: 0;
 				font-size: 18px;
+			}
+		}
+		.link {
+			position: relative;
+			display: inline-block;
+			padding-right: 20px;
+			line-height: 1.2;
+			font-size: 16px;
+			color: #fff;
+			@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+			@include breakpoint(minMobile){
+				font-size: 15px;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: -2px;
+				right: -2px;
+				width: 20px;
+				height: 20px;
+				background-image: icon(arrow, 'e2e8f0');
+				@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+				@include breakpoint(minDesktop) {
+					top: 0;
+					right: 0;
+				}
 			}
 		}
 		.text-list {
 			li {
 				position: relative;
-				@include vw(padding-left, 14px);
-				@include vw(font-size, 24px);
+				padding-left: 14px;
+				font-size: 14px;
 				font-weight: 500;
 				color: rgba($color: #64748b, $alpha: 0.9);
 				&::before {
@@ -76,33 +117,18 @@
 					color: currentColor;
 				}
 				&:first-child {
-					@include vw(margin-top, 20px);
-				}
-				@media (min-width: 1200px) {
-					font-size: 16px;
+					margin-top: 10px;
 				}
 			}
 		}
-	}
 
-	.skill-list {
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		flex-wrap: wrap;
-		@include vw(margin, 20px 0 0);
-		li {
-			display: inline-block;
-			@include vw(margin, 5px);
-			@include vw(padding, 10px 20px);
-			line-height: 1;
-			@include vw(font-size, 24px);
-			color: #5eead4;
-			border-radius: 20px;
-			background-color: rgba($color: #2dd4bf, $alpha: 0.1);
-			@media (min-width: 1200px) {
-				padding: 5px 10px;
-				font-size: 14px;
+		// link none
+		.disabled {
+			.link {
+				padding-right: 0;
+				&::before {
+					display: none;
+				}
 			}
 		}
 	}

@@ -1,75 +1,133 @@
 #career {
 	.career-wrap {
-		@include vw(padding, 0 40px);
-		// padding: 0 20px;
-		// @include breakpoint(maxMobile) {
-		// 	padding: 0 40px;
-		// }
+		padding: 0 24px;
 	}
 	.career-item {
+		position: relative;
+		@include breakpoint(minDesktop) {
+			padding: 20px 20px 20px 160px;
+			@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+			&:hover {
+				border-radius: 6px;
+				background-color: rgba(30,41,59,.5);
+				@include boxShadow(inset 0 1px 0 0 rgba(148,163,184,.1));
+				.title-sub {
+					color: #5eead4;
+					.link {
+						color: currentColor;
+						&::before {
+							top: -4px;
+							right: -4px;
+							background-image: icon(arrow, '5eead4');
+						}
+					}
+				}
+			}
+		}
+		@include breakpoint(desktop) {
+			padding-left: 180px;
+		}
 		& + .career-item {
-			@include vw(margin-top, 40px);
-			// margin-top: 20px;
-			// @include breakpoint(maxMobile) {
-			// 	margin-top: 40px;
-			// }
+			margin-top: 40px;
 		}
 		.period {
 			display: block;
-			// font-family: var(--mainNum-font);
-			@include vw(font-size, 30px);
+			font-size: 12px;
 			font-weight: 500;
 			color: rgba($color: #64748b, $alpha: 0.8);
-			// color: rgba($color: #fff, $alpha: 0.5);
-			// @include breakpoint(maxMobile) {
-			// 	font-size: 20px;
-			// }
-			@media (min-width: 1200px) {
+			@include breakpoint(minDesktop) {
+				position: absolute;
+				top: 20px;
+				left: 0;
 				font-size: 16px;
+			}
+			@include breakpoint(desktop) {
+				left: 20px;
 			}
 		}
 		.title-sub {
-			@include vw(margin-top, 10px);
-			@include vw(font-size, 30px);
-			// @include breakpoint(maxMobile) {
-			// 	font-size: 30px;
-			// }
-			@media (min-width: 1200px) {
-				font-size: 18px;
+			margin-top: 10px;
+			font-size: 16px;
+			@include breakpoint(minDesktop) {
+				margin-top: 0;
 			}
 		}
 		.link {
 			position: relative;
 			display: inline-block;
+			padding-right: 20px;
 			line-height: 1;
+			font-size: 16px;
+			color: #fff;
+			@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+			&::before {
+				content: '';
+				position: absolute;
+				top: -2px;
+				right: -2px;
+				width: 20px;
+				height: 20px;
+				background-image: icon(arrow, 'e2e8f0');
+				@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+				@include breakpoint(minDesktop) {
+					top: 0;
+					right: 0;
+				}
+			}
 		}
 		.info {
-			@include vw(font-size, 28px);
+			font-size: 14px;
 			font-weight: 500;
 			color: rgba($color: #64748b, $alpha: 0.8);
-			@media (min-width: 1200px) {
-				font-size: 16px;
+		}
+
+		// link none
+		.disabled {
+			.link {
+				padding-right: 0;
+				&::before {
+					display: none;
+				}
 			}
 		}
 	}
-	.skill-list {
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		flex-wrap: wrap;
-		@include vw(margin, 20px 0 0);
-		li {
+	.career-action {
+		padding: 40px 24px;
+		@include breakpoint(desktop) {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		.link {
+			position: relative;
 			display: inline-block;
-			@include vw(margin, 5px);
-			@include vw(padding, 10px 20px);
+			padding-right: 20px;
 			line-height: 1;
-			@include vw(font-size, 24px);
-			color: #5eead4;
-			border-radius: 20px;
-			background-color: rgba($color: #2dd4bf, $alpha: 0.1);
-			@media (min-width: 1200px) {
-				padding: 5px 10px;
-				font-size: 16px;
+			font-size: 16px;
+			color: #fff;
+			@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+			@include breakpoint(minDesktop) {
+				&:hover {
+					color: #5eead4;
+					&::before {
+						top: -4px;
+						right: -4px;
+						background-image: icon(arrow, '5eead4');
+					}
+				}
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: -2px;
+				right: -2px;
+				width: 20px;
+				height: 20px;
+				background-image: icon(arrow, 'e2e8f0');
+				@include transition(all, .15s, $how: cubic-bezier(.4,0,.2,1));
+				@include breakpoint(minDesktop) {
+					top: 0;
+					right: 0;
+				}
 			}
 		}
 	}
