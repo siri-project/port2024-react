@@ -29,7 +29,7 @@ const Port = () => {
 				<div className="port-wrap">
 					{portText.map((port, key) => (
 						<article className={`port-item p${key + 1}`} key={key}>
-							<a href={port.url} className={ port.url ? '' : 'disabled' } target="_blank">
+							<a href={port.url} className={ port.url ? '' : 'disabled' } target="_blank" rel="noreferrer noopener">
 								<p className="thumb">
 									<img src={port.img} alt={port.title} />
 								</p>

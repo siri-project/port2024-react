@@ -13,7 +13,7 @@ const Career = () => {
 				<div className="career-wrap">
 					{careerText.map((career, key) => (
 						<article className={`career-item career-${key+1}`} key={key}>
-							<a href={career.url} className={ career.url ? '' : 'disabled' } target="_blank">
+							<a href={career.url} className={ career.url ? '' : 'disabled' } target="_blank" rel="noreferrer noopener">
 								<p className="period">{career.period}</p>
 								<h3 className="title-sub">
 									<span className="link">{career.title}</span>
@@ -36,7 +36,7 @@ const Career = () => {
 				</div>
 
 				<div className="career-action">
-					<a href={careerPdf} target="_blank" className="link">전체 이력서 보기</a>
+					<a href={careerPdf} target="_blank" className="link" rel="noreferrer noopener">전체 이력서 보기</a>
 				</div>
 			</div>
 		</section>
