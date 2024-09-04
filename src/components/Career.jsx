@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import careerPdf from "../assets/pdf/EunsilJang_resume.pdf";
 import { careerText } from "../constants";
