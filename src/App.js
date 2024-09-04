@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import HomeView from "./views/HomeView";
 // import smooth from "./utils/smooth";
@@ -11,11 +11,11 @@ const App = () => {
 	// }, []);
 
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
+		//<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route path="/" element={<HomeView />} />
 			</Routes>
-		</BrowserRouter>
+		//</BrowserRouter>
 	);
 };
 
