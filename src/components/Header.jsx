@@ -68,7 +68,7 @@ const Header = () => {
 						{subTitles[currentSubTitleIndex]}
 					</p>
 				</h2>
-				<p className="text">건강하고 행복한 삶을 살자 :)</p>
+				<p className="text">My happiness is up to me :)</p>
 				<nav className="header-nav" role="navigation" aria-label="메인 메뉴">
 					<ul>
 						{headerNav.map((nav, key) =>(
