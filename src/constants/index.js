@@ -53,12 +53,12 @@ export const aboutText = [
 		]
 	},
 	{
-		title: "장단점",
+		title: "장점",
 		desc: [
-			"저는 정리를 잘하는 편으로, 팀 내 문서 작업을 주로 담당했습니다.",
-			"<strong>작업 시 최선을 다해 높은 품질의 결과물을 제공</strong>하지만, 항상 완벽을 추구하다 보니 스스로 스트레스를 받는 편입니다.",
-			"업무 진행 시 발생하는 문제는 독단적으로 해결하기 보다, 관련 <strong>작업자들과 소통하여 최선의 방법으로 해결</strong>합니다.",
-			"SI/SM, 에이전시, 교육업계 등 <strong>다양한 직군의 회사에서 일한 경험</strong>을 바탕으로 어떤 업무도 대응 가능합니다.",
+			"저는 팀 내에서 주로 문서 작업을 맡아왔으며, 이를 통해 <strong>팀의 업무 효율성과 자료 관리의 일관성을 높이는 데 기여</strong>했습니다.",
+			"항상 높은 품질의 결과물을 제공하기 위해 최선을 다하며, 작업의 세부적인 부분까지 신경 써서 <strong>최상의 결과를 도출하는 것을 목표</strong>로 합니다.",
+			"업무를 진행하면서 발생하는 문제는 독단적으로 해결하기보다 <strong>관련 작업자들과 소통하여 최선의 방법을 찾는 협업 능력</strong>을 갖추고 있습니다.",
+			"<strong>다양한 직군에서 일한 경험</strong>을 바탕으로 어떤 업무에도 유연하게 대응할 수 있습니다.",
 		]
 	},
 ];
@@ -117,7 +117,7 @@ export const portText = [
 			"Vue.js", "HTML5", "SCSS", "jQuery", "javascript", "Figma", "Git"
 		],
 		img: imgAcademy,
-		url: "https://gov.eduwill.net/sites/DanCourse",
+		url: "https://nrg.eduwill.net/sites/home",
 	},
 	{
 		title: "9급 공무원 단과 판매관리 구축 프로젝트",
@@ -178,7 +178,7 @@ export const portText = [
 			"<strong>기여도 :</strong> 100% (PC/MO)"
 		],
 		stack: [
-			"HTML5", "SCSS", "jQuery", "javascript"
+			"HTML5", "SCSS", "jQuery", "javascript", "Photoshop"
 		],
 		img: imgIbm,
 	},
@@ -203,7 +203,7 @@ export const portText = [
 			"<strong>기여도 :</strong> 100% (MO, 24년도 메인 리뉴얼)"
 		],
 		stack: [
-			"HTML5", "CSS3", "jQuery", "javascript", "Photoshop"
+			"HTML5", "CSS3", "jQuery", "javascript", "Zeplin"
 		],
 		img: imgAcademyM,
 		url: "https://brand.eduwill.net/academy/index.will?code=nrg",
@@ -236,7 +236,7 @@ export const portText = [
 	{
 		title: "독한합격앱 통합 프로젝트",
 		desc: [
-			"<strong>개요 :</strong> 기존의 합격앱을 webview 형태로 통합하는 프로젝트로, 사용자들에게 통일된 사용자 경험을 제공하고 기능을 향상 시키는 것을 목표로 합니다.",
+			"<strong>개요 :</strong> 기존에 분리 운영중인 합격앱들을 통합하는 프로젝트로, 사용자들에게 통일된 사용자 경험을 제공하고 기능을 향상 시키는 것을 목표로 합니다.",
 			"<strong>기간 :</strong> 2017.07 ~ 2018.01",
 			"<strong>기여도 :</strong> 100% (MO, 23년도 서비스 종료)"
 		],
