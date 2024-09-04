@@ -13,7 +13,7 @@ const Career = () => {
 				<div className="career-wrap">
 					{careerText.map((career, key) => (
 						<article className={`career-item career-${key+1}`} key={key}>
-							<a href={career.url} className={ career.url ? '' : 'disabled' } target="_blank" rel="noreferrer">
+							<a href={career.url} className={ career.url ? '' : 'disabled' } target="_blank">
 								<p className="period">{career.period}</p>
 								<h3 className="title-sub">
 									<span className="link">{career.title}</span>
