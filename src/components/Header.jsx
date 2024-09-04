@@ -69,7 +69,7 @@ const Header = () => {
 					</p>
 				</h2>
 				<p className="text">My happiness is up to me :)</p>
-				<nav className="header-nav" role="navigation">
+				<nav className="header-nav">
 					<ul>
 						{headerNav.map((nav, key) =>(
 							<li key={key}>
