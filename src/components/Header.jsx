@@ -58,7 +58,7 @@ const Header = () => {
 	}, []);
 
 	return (
-		<header id="header" role="header">
+		<header id="header">
 			<div className="inner">
 				<h1 className="title-main">
 					<a href="/">Eunsil Jang</a>
