@@ -1,3 +1,4 @@
+import imgGlobal from '../assets/img/global.png';
 import imgAcademy from '../assets/img/academy.jpg';
 import imgLecture from '../assets/img/lecture.jpg';
 import imgBook from '../assets/img/book.jpg';
@@ -103,7 +104,7 @@ export const careerText = [
 			"HTML5", "CSS3", "Adobe Photoshop", "jQuery", "jQuery UI", "JavaScript",
 		],
 	},
-];
+];  
 
 export const portText = [
 	{
@@ -116,7 +117,7 @@ export const portText = [
 		stack: [
 			"Vue.js", "HTML5", "SCSS", "jQuery", "javascript", "Figma", "Git"
 		],
-		img: imgAcademy,
+		img: imgGlobal,
 		url: "https://www.eduwill.net/sites/home",
 	},
 	{
