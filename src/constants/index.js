@@ -107,6 +107,19 @@ export const careerText = [
 
 export const portText = [
 	{
+		title: "글로벌 메인 개편 프로젝트",
+		desc: [
+			"<strong>개요 :</strong> 자사 사이트 내 온라인 교육과정 및 도서 홍보를 목적으로 개편한 프로젝트입니다.",
+			"<strong>기간 :</strong> 2025.03 ~ 2025.05(오픈 준비 중)",
+			"<strong>기여도 :</strong> 100% (PC/MO)"
+		],
+		stack: [
+			"Vue.js", "HTML5", "SCSS", "jQuery", "javascript", "Figma", "Git"
+		],
+		img: imgAcademy,
+		url: "https://www.eduwill.net/sites/home",
+	},
+	{
 		title: "직영학원 PC/MO 메인 개편 프로젝트",
 		desc: [
 			"<strong>개요 :</strong> 학원에서 사이트 자체 운영을 주요 목적으로, 디자인 및 개발 작업 단계를 줄여 업무 효율을 극대화한 프로젝트입니다.",
