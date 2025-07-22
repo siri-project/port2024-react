@@ -111,7 +111,7 @@ export const portText = [
 		title: "글로벌 메인 개편 프로젝트",
 		desc: [
 			"<strong>개요 :</strong> 자사 사이트 내 온라인 교육과정 및 도서 홍보를 목적으로 개편한 프로젝트입니다.",
-			"<strong>기간 :</strong> 2025.03 ~ 2025.06(오픈 준비 중)",
+			"<strong>기간 :</strong> 2025.03 ~ 2025.06",
 			"<strong>기여도 :</strong> 100% (PC/MO)"
 		],
 		stack: [
